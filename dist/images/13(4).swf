@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title></title>
+	<meta property="qc:admins" content="23114622706551756417" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="http://image.xzhuang.com/static/index/css/newcommon.css?v1"/>
+    <script type="text/javascript" src="http://image.xzhuang.com/static/js/jquery-1.10.1.js"></script>
+    <script type="text/javascript" src="http://image.xzhuang.com/static/index/js/j/jend.js"></script>
+    <script type="text/javascript" src="http://image.xzhuang.com/static/js/jquery.scrollLoading.js"></script>
+    <script src="http://image.xzhuang.com/static/index/js/newcommon.js?v1"></script>
+</head>
+<body>
+<div class="newHome-head">
+    <div class="newHome-head-top">
+        <div class="wrap" style="z-index: 20">
+            <ul class="clearfix newHome-head-subnav">
+                <li class="clearfix"><!--<span class="lecturer-query-icon"></span>--><a href="/cas/card" class="vip-activation" target="_blank">会员卡激活</a> | </li>
+                <li class="clearfix"><a href="/beautiful/index" class="lecturer-query" target="_blank">讲师查询</a> | </li>
+                <li class="clearfix"><a href="http://www.xzhuang.com/school" class="lecturer-query" target="_blank">校园资讯</a></li>
+            </ul>
+
+            <div class="service"><div class="serv"></div>客户服务 </div>
+            <div class="service_unfold">
+                <div class="serv2"></div>
+                <span>客户服务</span>
+                <a href="http://www.xzhuang.com/pages/helpcenter.htm" target="_blank">帮助中心</a>
+                <a href="http://www.xzhuang.com/pages/help_suggestion.htm" target="_blank">用户反馈</a>
+            </div>
+            <div class="line"></div>
+            <div class="myxz"><div class="serv"></div>我的校妆</div>
+            <div class="myxz_unfold">
+                <div class="serv2"></div>
+                <span onClick="window.open('http://www.xzhuang.com/cas/panel')">我的校妆</span>
+                <a href="http://www.xzhuang.com/cas/user/coupon" target="_blank">我的优惠券</a>
+                <a href="http://www.xzhuang.com/cas/user/point" target="_blank">我的积分</a>
+                <a href="http://www.xzhuang.com/cas/user/store" target="_blank">我的储值</a>
+                <a href="http://www.xzhuang.com/cas/user/pinglun" target="_blank">我的咨询</a>
+                <a href="http://www.xzhuang.com/cas/user/favorite" target="_blank">商品收藏</a>
+            </div>
+            <div class="myorder"><a href="http://www.xzhuang.com/cas/order" target="_blank" >我的订单</a></div>
+            <div  class="line2"></div>
+            <div class="myorder_unfold">
+                <div class="serv2"></div>
+                <span>我的订单</span>
+            </div>
+
+
+            <div class="welcome" id="loginInfo">
+                <script>
+                    function getcookie(objname){
+                        var arrstr = document.cookie.split("; ");
+                        for(var i = 0;i < arrstr.length;i ++){
+                            var temp = arrstr[i].split("=");
+                            if(temp[0] == objname) return unescape(decodeURI(temp[1]));
+                        }
+                    }
+
+                    var username=getcookie('S[UNAME]');
+                    if(username){
+                        document.write("您好：<a href ='http://www.xzhuang.com/cas/panel' target='_blank' style='color:#e73a77'> "+username+"</a>&nbsp;<a href='http://www.xzhuang.com/cas/sign/out' style='color:#e73a77'>【退出】</a>");
+                    }else{
+                        document.write("<a href='http://www.xzhuang.com?passport-%2F13.swf-login.html' style='color:#e73a77'>【登录】</a>&nbsp;<a href='http://www.xzhuang.com/?passport-signup.html'>【注册】</a>");
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div class="newHome-head-center">
+        <div class="wrap pr" style="z-index: 5">
+            <h1>
+            	<a href="/index.php" class="newHome-logo">校妆网</a>        
+            </h1>
+			<!--<div class="slogan"><a class="slo_txt"><span>妆B技术哪家强？</span></a></div>-->
+            <div class="newHome-query">
+                <div class="clearfix" style="height: 45px; overflow: hidden">
+                    <form action="http://www.xzhuang.com/goods/category/" name="formSearch" method="get" onsubmit="setSearchKeyWord();">
+                        <input type="text" name="key" id="" class="searchin" value="" autocomplete="off"/>
+                        <input type="submit" value=" " class="searchbtss"/>
+                    </form>
+                </div>
+
+                <ul class="clearfix hot-word">
+                    <li style="margin-right: 0">热门：</li>
+                    <li><a href="http://www.xzhuang.com/?brand-270.html" target="_blank" style="color:#e73a77">SKIN79</a></li>
+                    <li><a href="http://www.xzhuang.com/?brand-732.html" target="_blank">SUNSHOP</a></li>
+                    <li><a href="http://www.xzhuang.com/goods/category/?key=%E4%B9%B3%E6%B6%B2" target="_blank">乳液</a></li>
+                    <li><a href="/?gallery-346-grid.html" target="_blank">护肤套装</a></li>
+                    <li><a href="http://www.xzhuang.com/goods/category/?key=%E4%BF%9D%E6%B9%BF%E8%A1%A5%E6%B0%B4" target="_blank">保湿补水</a></li>
+                    <li><a href="http://www.xzhuang.com/goods/category/?key=%E9%9D%A2%E8%86%9C" target="_blank">面膜</a></li>
+                    <li><a href="http://www.xzhuang.com/goods/category/?key=BB%E9%9C%9C" target="_blank">BB霜</a></li>
+                    <li><a href="http://www.xzhuang.com/goods/category/?key=%E7%BE%8E%E7%99%BD" target="_blank">美白</a></li>
+                    <!--<li style="_margin-right: 0"><a href="http://www.xzhuang.com/static/actives/mengzhemengsong.html" target="_blank">清仓</a></li>-->
+                </ul>
+            </div>
+            <ul class="newHome-query-link"></ul>
+
+            <div class="newHome-icon-tip">
+                <!--<img src="http://image.xzhuang.com/static/index/image/newHome-icon-tip.png" alt=""/>-->
+                <ul>
+                    <li><i class="i3"></i>满98免运费</li>
+                    <li><i class="i2"></i>校园服务</li>
+                    <li><i class="i1"></i>100%正品</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="newHome-nav">
+        <div class="wrap">
+            <ul class="newHome-nav-list clearfix">
+                <li class="allproduct-type">
+                    <span id="allproduct-icon"></span>
+                    <a href="javascript:void(0)">全部商品分类</a>
+                    <div class="allproducts-type-nav">
+                        <ul>
+                            <li>
+                                <h4 class="pr"><span id="type-icons-1"></span><a href="/?gallery-314-grid.html" target="_blank">面部护肤</a></h4>
+                                <div class="allproducts-type-div clearfix pr">
+                                    <a href="/?gallery-339-grid.html" target="_blank">防晒隔离</a>
+                                    <a href="/?gallery-340-grid.html" target="_blank">面膜</a>
+                                    <a href="/?gallery-343-grid.html" target="_blank">眼部护理</a>
+                                    <a href="/?gallery-346-grid.html" target="_blank">护肤套装</a>
+                                    <em>&gt;</em>
+                                </div>
+                                <div class="allproducts-subtype">
+                                    <ul>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-315-grid.html" target="_blank">洁面</a></dt>
+                                                <dd><a href="/?gallery-318-grid.html" target="_blank">洁面乳</a></dd>
+                                                <dd><a href="/?gallery-319-grid.html" target="_blank">磨砂去角质</a></dd>
+                                                <dd><a href="/?gallery-320-grid.html" target="_blank">洁面皂</a></dd>
+                                                <dd><a href="/?gallery-321-grid.html" target="_blank">洁面膏</a></dd>
+                                                <dd><a href="/?gallery-322-grid.html" target="_blank">洁面霜</a></dd>
+                                                <dd><a href="/?gallery-323-grid.html" target="_blank">洁面泡沫</a></dd>
+                                                <dd><a href="/?gallery-324-grid.html" target="_blank">洁面啫喱</a></dd>
+                                                <dd><a href="/?gallery-325-grid.html" target="_blank">洁面粉</a></dd>
+                                                <dd><a href="/?gallery-326-grid.html" target="_blank">洁面摩丝</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-317-grid.html" target="_blank">化妆水</a></dt>
+                                                <dd><a href="/?gallery-328-grid.html" target="_blank">柔肤水</a></dd>
+                                                <dd><a href="/?gallery-329-grid.html" target="_blank">爽肤水</a></dd>
+                                                <dd><a href="/?gallery-330-grid.html" target="_blank">喷雾</a></dd>
+                                                <dd><a href="/?gallery-331-grid.html" target="_blank">紧肤水</a></dd>
+                                                <dd><a href="/?gallery-332-grid.html" target="_blank">洁肤水</a></dd>
+                                                <dd><a href="/?gallery-333-grid.html" target="_blank">调理水</a></dd>
+                                                <dd><a href="/?gallery-334-grid.html" target="_blank">纯露/花水</a></dd>
+                                                <dd><a href="/?gallery-335-grid.html" target="_blank">保湿水</a></dd>
+                                                <dd><a href="/?gallery-336-grid.html" target="_blank">其他化妆水</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-338-grid.html" target="_blank">乳液</a></dt>
+                                                <dd><a href="/?gallery-347-grid.html" target="_blank">日乳</a></dd>
+                                                <dd><a href="/?gallery-348-grid.html" target="_blank">晚乳</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-339-grid.html" target="_blank">防晒隔离</a></dt>
+                                                <dd><a href="/?gallery-349-grid.html" target="_blank">防晒霜/乳</a></dd>
+                                                <dd><a href="/?gallery-350-grid.html" target="_blank">隔离霜/乳</a></dd>
+                                                <dd><a href="/?gallery-351-grid.html" target="_blank">防晒喷雾</a></dd>
+                                                <dd><a href="/?gallery-352-grid.html" target="_blank">晒后修复</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-340-grid.html" target="_blank">面膜</a></dt>
+                                                <dd><a href="/?gallery-353-grid.html" target="_blank">免洗面膜</a></dd>
+                                                <dd><a href="/?gallery-354-grid.html" target="_blank">清洗型面膜</a></dd>
+                                                <dd><a href="/?gallery-355-grid.html" target="_blank">面贴膜</a></dd>
+                                                <dd><a href="/?gallery-356-grid.html" target="_blank">撕拉面膜</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-341-grid.html" target="_blank">精华</a></dt>
+                                                <dd><a href="/?gallery-357-grid.html" target="_blank">原液</a></dd>
+                                                <dd><a href="/?gallery-358-grid.html" target="_blank">精华</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-342-grid.html" target="_blank">面霜</a></dt>
+                                                <dd><a href="/?gallery-360-grid.html" target="_blank">日霜</a></dd>
+                                                <dd><a href="/?gallery-361-grid.html" target="_blank">晚霜</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-343-grid.html" target="_blank">眼部护理</a></dt>
+                                                <dd><a href="/?gallery-362-grid.html" target="_blank">眼霜</a></dd>
+                                                <dd><a href="/?gallery-363-grid.html" target="_blank">眼贴/膜</a></dd>
+                                                <dd><a href="/?gallery-364-grid.html" target="_blank">眼啫喱</a></dd>
+                                                <dd><a href="/?gallery-365-grid.html" target="_blank">礼盒/套装</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-344-grid.html" target="_blank">唇部护理</a></dt>
+                                                <dd><a href="/?gallery-366-grid.html" target="_blank">润唇膏</a></dd>
+                                                <dd><a href="/?gallery-367-grid.html" target="_blank">唇膜</a></dd>
+                                                <dd><a href="/?gallery-369-grid.html" target="_blank">去角质</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-345-grid.html" target="_blank">T区/颈部护理</a></dt>
+                                                <dd><a href="/?gallery-370-grid.html" target="_blank">吸油面纸</a></dd>
+                                                <dd><a href="/?gallery-371-grid.html" target="_blank">鼻膜</a></dd>
+                                                <dd><a href="/?gallery-372-grid.html" target="_blank">黑头导出</a></dd>
+                                                <dd><a href="/?gallery-373-grid.html" target="_blank">颈膜</a></dd>
+                                                <dd><a href="/?gallery-374-grid.html" target="_blank">颈霜</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-346-grid.html" target="_blank">护肤套装</a></dt>
+                                                <dd><a href="/?gallery-375-grid.html" target="_blank">礼盒/套装</a></dd>
+                                                <dd><a href="/?gallery-376-grid.html" target="_blank">迷你套装</a></dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                    <!--<a href="http://www.xzhuang.com/?brand-215.html" target="_blank"><img src="http://image.xzhuang.com/static/index/image/subbanner-1.jpg" alt=""/></a>-->
+                                </div>
+                            </li>
+                            <li>
+                                <h4 class="pr"><span id="type-icons-2"></span><a href="/?gallery-377-grid.html" target="_blank">时尚彩妆</a></h4>
+                                <div class="allproducts-type-div clearfix pr">
+                                    <a href="/?gallery-378-grid.html" target="_blank">面部妆容</a>
+                                    <a href="/?gallery-379-grid.html" target="_blank">眼部妆容</a>
+                                    <a href="/?gallery-380-grid.html" target="_blank">唇部妆容</a>
+                                    <a href="/?gallery-383-grid.html" target="_blank">彩妆套装</a>
+                                    <em>&gt;</em>
+                                </div>
+                                <div class="allproducts-subtype">
+                                    <ul>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-378-grid.html" target="_blank">面部妆容</a></dt>
+                                                <dd><a href="/?gallery-384-grid.html" target="_blank">BB霜</a></dd>
+                                                <dd><a href="/?gallery-385-grid.html" target="_blank">遮瑕笔</a></dd>
+                                                <dd><a href="/?gallery-386-grid.html" target="_blank">粉饼</a></dd>
+                                                <dd><a href="/?gallery-387-grid.html" target="_blank">粉底液/霜</a></dd>
+                                                <dd><a href="/?gallery-388-grid.html" target="_blank">散粉/蜜粉</a></dd>
+                                                <dd><a href="/?gallery-389-grid.html" target="_blank">腮红胭脂</a></dd>
+                                                <dd><a href="/?gallery-390-grid.html" target="_blank">CC霜</a></dd>
+                                                <dd><a href="/?gallery-391-grid.html" target="_blank">妆前乳</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-379-grid.html" target="_blank">眼部妆容</a></dt>
+                                                <dd><a href="/?gallery-392-grid.html" target="_blank">睫毛膏/液</a></dd>
+                                                <dd><a href="/?gallery-393-grid.html" target="_blank">眼线膏/笔/液</a></dd>
+                                                <dd><a href="/?gallery-394-grid.html" target="_blank">眉笔/眉粉</a></dd>
+                                                <dd><a href="/?gallery-395-grid.html" target="_blank">眼影</a></dd>
+                                                <dd><a href="/?gallery-396-grid.html" target="_blank">睫毛滋养液</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-380-grid.html" target="_blank">唇部妆容</a></dt>
+                                                <dd><a href="/?gallery-398-grid.html" target="_blank">唇彩</a></dd>
+                                                <dd><a href="/?gallery-399-grid.html" target="_blank">唇膏</a></dd>
+                                                <dd><a href="/?gallery-400-grid.html" target="_blank">唇蜜</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-381-grid.html" target="_blank">卸妆</a></dt>
+                                                <dd><a href="/?gallery-401-grid.html" target="_blank">卸妆液</a></dd>
+                                                <dd><a href="/?gallery-402-grid.html" target="_blank">卸妆油</a></dd>
+                                                <dd><a href="/?gallery-403-grid.html" target="_blank">卸妆乳</a></dd>
+                                                <dd><a href="/?gallery-404-grid.html" target="_blank">卸妆水</a></dd>
+                                                <dd><a href="/?gallery-405-grid.html" target="_blank">眼唇卸妆</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-382-grid.html" target="_blank">美甲</a></dt>
+                                                <dd><a href="/?gallery-406-grid.html" target="_blank">指甲油</a></dd>
+                                                <dd><a href="/?gallery-407-grid.html" target="_blank">洗甲水</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-383-grid.html" target="_blank">彩妆套装</a></dt>
+                                                <dd><a href="/?gallery-408-grid.html" target="_blank">彩妆组合</a></dd>
+                                                <dd><a href="/?gallery-409-grid.html" target="_blank">礼盒/套装</a></dd>
+                                                <dd><a href="/?gallery-410-grid.html" target="_blank">彩妆盘</a></dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                    <!--<a href="http://www.xzhuang.com/?brand-217.html" target="_blank"><img src="http://image.xzhuang.com/static/index/image/subbanner-2.jpg" alt=""/></a>-->
+                                </div>
+                            </li>
+                            <li>
+                                <h4 class="pr"><span id="type-icons-3"></span><a href="/?gallery-412-grid.html" target="_blank">个人护理</a></h4>
+                                <div class="allproducts-type-div clearfix pr">
+                                    <a href="/?gallery-428-grid.html" target="_blank">身体润肤</a>
+                                    <a href="/?gallery-429-grid.html" target="_blank">沐浴清洁</a>
+                                    <a href="/?gallery-430-grid.html" target="_blank">手足护理</a>
+                                    <a href="/?gallery-432-grid.html" target="_blank">秀发洗护</a>
+                                    <em>&gt;</em>
+                                </div>
+                                <div class="allproducts-subtype">
+                                    <ul>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-427-grid.html" target="_blank">口腔护理</a></dt>
+                                                <dd><a href="/?gallery-435-grid.html" target="_blank">牙膏/牙粉</a></dd>
+                                                <dd><a href="/?gallery-436-grid.html" target="_blank">牙刷</a></dd>
+                                                <dd><a href="/?gallery-437-grid.html" target="_blank">涮口水</a></dd>
+                                                <dd><a href="/?gallery-438-grid.html" target="_blank">牙线</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-428-grid.html" target="_blank">身体润肤</a></dt>
+                                                <dd><a href="/?gallery-439-grid.html" target="_blank">润肤乳</a></dd>
+                                                <dd><a href="/?gallery-440-grid.html" target="_blank">润肤霜</a></dd>
+                                                <dd><a href="/?gallery-441-grid.html" target="_blank">润肤油</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-429-grid.html" target="_blank">沐浴清洁</a></dt>
+                                                <dd><a href="/?gallery-442-grid.html" target="_blank">沐浴露</a></dd>
+                                                <dd><a href="/?gallery-443-grid.html" target="_blank">浴盐</a></dd>
+                                                <dd><a href="/?gallery-444-grid.html" target="_blank">香皂</a></dd>
+                                                <dd><a href="/?gallery-445-grid.html" target="_blank">泡泡浴</a></dd>
+                                                <dd><a href="/?gallery-446-grid.html" target="_blank">走珠香体露</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-430-grid.html" target="_blank">手足护理</a></dt>
+                                                <dd><a href="/?gallery-447-grid.html" target="_blank">护手</a></dd>
+                                                <dd><a href="/?gallery-448-grid.html" target="_blank">洗手</a></dd>
+                                                <dd><a href="/?gallery-449-grid.html" target="_blank">按摩</a></dd>
+                                                <dd><a href="/?gallery-450-grid.html" target="_blank">护足</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-431-grid.html" target="_blank">洗护套装</a></dt>
+                                                <dd><a href="/?gallery-451-grid.html" target="_blank">手部护理套装</a></dd>
+                                                <dd><a href="/?gallery-452-grid.html" target="_blank">身体护理套装</a></dd>
+                                                <dd><a href="/?gallery-453-grid.html" target="_blank">口腔护理套装</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-432-grid.html" target="_blank">秀发洗护</a></dt>
+                                                <dd><a href="/?gallery-454-grid.html" target="_blank">洗发露</a></dd>
+                                                <dd><a href="/?gallery-455-grid.html" target="_blank">护发素</a></dd>
+                                                <dd><a href="/?gallery-456-grid.html" target="_blank">焗油膏</a></dd>
+                                                <dd><a href="/?gallery-457-grid.html" target="_blank">营养水</a></dd>
+                                                <dd><a href="/?gallery-458-grid.html" target="_blank">发膜</a></dd>
+                                                <dd><a href="/?gallery-459-grid.html" target="_blank">精华素</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-433-grid.html" target="_blank">染发/造型</a></dt>
+                                                <dd><a href="/?gallery-460-grid.html" target="_blank">染发</a></dd>
+                                                <dd><a href="/?gallery-462-grid.html" target="_blank">发蜡</a></dd>
+                                                <dd><a href="/?gallery-463-grid.html" target="_blank">弹力素</a></dd>
+                                                <dd><a href="/?gallery-464-grid.html" target="_blank">发胶</a></dd>
+                                                <dd><a href="/?gallery-502-grid.html" target="_blank">美甲工具</a></dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                    <!--<a href="http://www.xzhuang.com/?brand-256.html" target="_blank"><img src="http://image.xzhuang.com/static/index/image/subbanner-3.jpg" alt=""/></a>-->
+                                </div>
+                            </li>
+                            <li>
+                                <h4 class="pr"><span id="type-icons-4"></span><a href="/?gallery-413-grid.html" target="_blank">美体/工具</a></h4>
+                                <div class="allproducts-type-div clearfix pr">
+                                    <a href="/?gallery-466-grid.html" target="_blank">美体塑身</a>
+                                    <a href="/?gallery-467-grid.html" target="_blank">身体脱毛</a>
+                                    <a href="/?gallery-470-grid.html" target="_blank">护肤工具</a>
+                                    <a href="/?gallery-471-grid.html" target="_blank">彩妆工具</a>
+                                    <em>&gt;</em>
+                                </div>
+                                <div class="allproducts-subtype">
+                                    <ul>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-466-grid.html" target="_blank">美体塑身</a></dt>
+                                                <dd><a href="/?gallery-474-grid.html" target="_blank">局部瘦身</a></dd>
+                                                <dd><a href="/?gallery-475-grid.html" target="_blank">瘦身收腹</a></dd>
+                                                <dd><a href="/?gallery-476-grid.html" target="_blank">丰胸美乳</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-467-grid.html" target="_blank">美甲工具</a></dt>
+                                                <dd><a href="/?gallery-502-grid.html" target="_blank">美甲工具</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-468-grid.html" target="_blank">身体脱毛</a></dt>
+                                                <dd><a href="/?gallery-477-grid.html" target="_blank">脱毛膏</a></dd>
+                                                <dd><a href="/?gallery-478-grid.html" target="_blank">脱毛蜡</a></dd>
+                                                <dd><a href="/?gallery-479-grid.html" target="_blank">脱毛蜡纸</a></dd>
+                                                <dd><a href="/?gallery-480-grid.html" target="_blank">修护液</a></dd>
+                                                <dd><a href="/?gallery-481-grid.html" target="_blank">脱毛套装</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-469-grid.html" target="_blank">驱蚊/爽身</a></dt>
+                                                <dd><a href="/?gallery-486-grid.html" target="_blank">驱蚊止痒</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-470-grid.html" target="_blank">精油</a></dt>
+                                                <dd><a href="/?gallery-483-grid.html" target="_blank">单方精油</a></dd>
+                                                <dd><a href="/?gallery-484-grid.html" target="_blank">复方精油</a></dd>
+                                                <dd><a href="/?gallery-485-grid.html" target="_blank">基础油</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-471-grid.html" target="_blank">护肤工具</a></dt>
+                                                <dd><a href="/?gallery-487-grid.html" target="_blank">棉签/化妆棉</a></dd>
+                                                <dd><a href="/?gallery-488-grid.html" target="_blank">面膜纸</a></dd>
+                                                <dd><a href="/?gallery-489-grid.html" target="_blank">洁面扑</a></dd>
+                                                <dd><a href="/?gallery-490-grid.html" target="_blank">化妆镜</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-472-grid.html" target="_blank">彩妆工具</a></dt>
+                                                <dd><a href="/?gallery-491-grid.html" target="_blank">睫毛夹</a></dd>
+                                                <dd><a href="/?gallery-492-grid.html" target="_blank">粉扑</a></dd>
+                                                <dd><a href="/?gallery-493-grid.html" target="_blank">修眉刀</a></dd>
+                                                <dd><a href="/?gallery-494-grid.html" target="_blank">睫毛夹</a></dd>
+                                                <dd><a href="/?gallery-495-grid.html" target="_blank">眉夹</a></dd>
+                                                <dd><a href="/?gallery-496-grid.html" target="_blank">双眼皮贴</a></dd>
+                                                <dd><a href="/?gallery-497-grid.html" target="_blank">化妆刷</a></dd>
+                                                <dd><a href="/?gallery-498-grid.html" target="_blank">眼影棒</a></dd>
+                                                <dd><a href="/?gallery-499-grid.html" target="_blank">工具套装</a></dd>
+                                                <dd><a href="/?gallery-528-grid.html" target="_blank">假睫毛</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-473-grid.html" target="_blank">身体工具</a></dt>
+                                                <dd><a href="/?gallery-500-grid.html" target="_blank">身体护理工具</a></dd>
+                                                <dd><a href="/?gallery-501-grid.html" target="_blank">按摩工具</a></dd>
+                                                <dd><a href="/?gallery-529-grid.html" target="_blank">其它</a></dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                    <!--<a href="http://www.xzhuang.com/?brand-30.html" target="_blank"><img src="http://image.xzhuang.com/static/index/image/subbanner-4.jpg" alt=""/></a>-->
+                                </div>
+                            </li>
+                            <li>
+                                <h4 class="pr"><span id="type-icons-5"></span><a href="/?gallery-414-grid.html" target="_blank">男士护理</a></h4>
+                                <div class="allproducts-type-div clearfix pr">
+                                    <a href="/?gallery-503-grid.html" target="_blank">面部护理</a>
+                                    <a href="/?gallery-505-grid.html" target="_blank">剃须护理</a>
+                                    <a href="/?gallery-506-grid.html" target="_blank">身体护理</a>
+                                    <a href="/?gallery-507-grid.html" target="_blank">护理套装</a>
+                                    <em>&gt;</em>
+                                </div>
+                                <div class="allproducts-subtype">
+                                    <ul>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-503-grid.html" target="_blank">面部护理</a></dt>
+                                                <dd><a href="/?gallery-508-grid.html" target="_blank">乳液</a></dd>
+                                                <dd><a href="/?gallery-509-grid.html" target="_blank">洁面</a></dd>
+                                                <dd><a href="/?gallery-510-grid.html" target="_blank">面霜</a></dd>
+                                                <dd><a href="/?gallery-511-grid.html" target="_blank">爽肤水</a></dd>
+                                                <dd><a href="/?gallery-512-grid.html" target="_blank">精华</a></dd>
+                                                <dd><a href="/?gallery-513-grid.html" target="_blank">防晒霜/乳</a></dd>
+                                                <dd><a href="/?gallery-514-grid.html" target="_blank">隔离霜/乳</a></dd>
+                                                <dd><a href="/?gallery-515-grid.html" target="_blank">面膜</a></dd>
+                                                <dd><a href="/?gallery-527-grid.html" target="_blank">彩妆</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-504-grid.html" target="_blank">眼部护理</a></dt>
+                                                <dd><a href="/?gallery-517-grid.html" target="_blank">眼霜</a></dd>
+                                                <dd><a href="/?gallery-518-grid.html" target="_blank">眼啫喱</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-505-grid.html" target="_blank">剃须护理</a></dt>
+                                                <dd><a href="/?gallery-519-grid.html" target="_blank">剃须泡沫/膏</a></dd>
+                                                <dd><a href="/?gallery-520-grid.html" target="_blank">须后水/乳</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-506-grid.html" target="_blank">身体护理</a></dt>
+                                                <dd><a href="/?gallery-521-grid.html" target="_blank">沐浴露</a></dd>
+                                                <dd><a href="/?gallery-522-grid.html" target="_blank">脱毛</a></dd>
+                                                <dd><a href="/?gallery-523-grid.html" target="_blank">止汗香体</a></dd>
+                                                <dd><a href="/?gallery-531-grid.html" target="_blank">身体乳</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-507-grid.html" target="_blank">护理套装</a></dt>
+                                                <dd><a href="/?gallery-524-grid.html" target="_blank">剃须礼盒/套装</a></dd>
+                                                <dd><a href="/?gallery-525-grid.html" target="_blank">男士身体护理套装</a></dd>
+                                                <dd><a href="/?gallery-526-grid.html" target="_blank">男士面部护理套装</a></dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                   <!-- <a href="http://www.xzhuang.com/?brand-728.html" target="_blank"><img src="http://image.xzhuang.com/static/index/image/subbanner-5.jpg" alt=""/></a>-->
+                                </div>
+                            </li>
+                            <li style="border-bottom: 1px solid #f9f9f9">
+                                <h4 class="pr"><span id="type-icons-6"></span><a href="/?gallery-411-grid.html" target="_blank">经典香氛</a></h4>
+                                <div class="allproducts-type-div clearfix pr">
+                                    <a href="/?gallery-415-grid.html" target="_blank">女士香水</a>
+                                    <a href="/?gallery-416-grid.html" target="_blank">男士香水</a>
+                                    <a href="/?gallery-417-grid.html" target="_blank">迷你香水</a>
+                                    <a href="/?gallery-418-grid.html" target="_blank">香水套装</a>
+                                    <em>&gt;</em>
+                                </div>
+                                <div class="allproducts-subtype">
+                                    <ul>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-415-grid.html" target="_blank">女士香水</a></dt>
+                                                <dd><a href="/?gallery-419-grid.html" target="_blank">香水</a></dd>
+                                                <dd><a href="/?gallery-420-grid.html" target="_blank">淡香水</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-416-grid.html" target="_blank">男士香水</a></dt>
+                                                <dd><a href="/?gallery-421-grid.html" target="_blank">香水</a></dd>
+                                                <dd><a href="/?gallery-422-grid.html" target="_blank">淡香水</a></dd>
+                                                <dd><a href="/?gallery-423-grid.html" target="_blank">古龙水</a></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl class="clearfix">
+                                                <dt><a href="/?gallery-417-grid.html" target="_blank">迷你香水</a></dt>
+                                                <dd><a href="/?gallery-424-grid.html" target="_blank">迷你香水</a></dd>
+                                                <dt><a href="/?gallery-418-grid.html" target="_blank">香水套装</a></dt>
+                                                <dd><a href="/?gallery-425-grid.html" target="_blank">礼盒/套装</a></dd>
+                                                <dd><a href="/?gallery-426-grid.html" target="_blank">迷你套装</a></dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                    <!--<a href="http://www.xzhuang.com/?brand-760.html" target="_blank"><img src="http://image.xzhuang.com/static/index/image/subbanner-6.jpg" alt=""/></a>-->
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.xzhuang.com/index.php"><!--<span id="home-icon"></span>-->首页</a>
+                </li>
+                <li style="width:128px">
+                    <a href="http://www.xzhuang.com/?brand-270.html" target="_blank" style="text-align: left; text-indent: 20px;background:#E73A77;font-weight:bold">SKIN79专区 <span id="temai-icon" style="left:123px"></span></a>
+                </li>
+                <!--<li><a href="http://www.xzhuang.com/trial" target="_blank">领试馆</a></li>-->
+                <li><a href="http://www.xzhuang.com/goods/score" target="_blank"><span id="hot-icon"></span>积分购</a></li>
+                <!--<li><a href="http://www.xzhuang.com/goods/grab" target="_blank"><span id="hot-icon"></span>抄底秒</a></li>-->
+                <!--<li><a href="http://www.xzhuang.com/school" target="_blank">校园活动</a></li>-->
+                <li>
+                    <a href="javascript:alert('频道更新中');"><!--<span id="beauty-icon"></span>-->美堂课</a>
+                </li>
+                <li><a href="http://www.xzhuang.com/static/actives/download_app.html" target="_blank"><span id="new-icon"></span>手机校妆</a></li>
+                <li id="newHome-shopCar" class="pr">
+                    <a href="javascript:void(0);" style="text-align: left; text-indent: 130px"><span class="new-cart-number"></span>购物车</a>
+                    <div class="newHome-shopCar">
+                        <ul></ul>
+                        <div class="newHome-shopCar-all">
+                            <p style="padding: 10px">共计：<span style="font-family: 'arial';">¥</span>
+                                <span id="newHome-shopCar-all" style="color: #F39803"></span>元
+                            <a href="http://www.xzhuang.com/bts/carts" target="_blank"></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+                    
+
+<script type="text/javascript">
+     function countDown(secs) {
+         $('#countdown').text(secs);
+         if (--secs > 0) {
+             setTimeout("countDown(" + secs + ")", 1000);
+         } else {
+             window.location.href = url;
+         }
+     }
+</script>
+<style>
+#Security_Center{width: 1100px;margin:0 auto;}
+
+.FeedBackInfo {
+    color: #333333;
+    margin: 50px auto;
+    width: 788px;
+}
+.FeedBackInfo .success, .FeedBackInfo .error {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    margin: 0 auto;
+}
+.FeedBackInfo .success .pic, .FeedBackInfo .error .pic {
+    background: url("../../static/index/img/feedbackinfo.gif") no-repeat scroll center center rgba(0, 0, 0, 0);
+    border-right: 1px solid #EEEEEE;
+    height: 128px;
+    padding: 0 10px;
+    width: 128px;
+}
+.FeedBackInfo .success .pic {
+    background-position: 0 18px;
+}
+.FeedBackInfo .error .pic {
+    background-position: 0 -97px;
+}
+.FeedBackInfo h1 {
+    font-size: 14px;
+    margin: 0 0 0 5px;
+}
+.FeedBackInfo .success h1 {
+    color: #006600;
+}
+.FeedBackInfo .error h1 {
+    color: #990000;
+}
+
+</style>
+
+
+
+<div class="FeedBackInfo">
+	<div class="error clearfix">
+		<div class="span-1 pic"></div>
+		<div class="span-auto ">
+			<h1></h1>
+			<p class="jumpurl">
+				            			</p>
+		</div>
+	</div>
+</div>
+
+
+                
+<div class="newHome-footer">
+    <div class="newHome-foot-content">
+        <p style="height: 1px; background: #fdfdfd; overflow: hidden; width: 100%"></p>
+        <div class="security">
+            <ul>
+                <li>
+                    <a href="http://www.xzhuang.com/static/actives/shangjiashouquan.html" class="sec1" target="_blank"></a>
+                    <div>
+                    	<p>正品承诺</p>
+                    	<span>100%正品保障</span>
+                    </div>
+                    
+                </li>
+                <li>
+                    <a href="http://www.xzhuang.com/static/actives/meizhuangshiye.html" class="sec2" target="_blank"></a>
+                    <div>
+                    	<p>美妆事业</p>
+                    	<span>专业团队保障</span>
+                    </div>
+                    
+                </li>
+                <li>
+                    <a href="http://www.xzhuang.com/static/actives/xiaoyuanwufu.html" class="sec4" target="_blank"></a>
+                    <div>
+                    	<p>校园服务</p>
+                    	<span>细致贴心服务</span>
+                    </div>
+                    
+                </li>
+                <li>
+                    <a href="http://www.xzhuang.com/static/actives/baoguopaifa.html" class="sec7" target="_blank"></a>
+                    <div>
+                    	<p>包裹派发</p>
+                    	<span>18小时内闪电发货</span>
+                    </div>
+                    
+                </li>
+                <li class="f_last">
+                    <a href="http://www.xzhuang.com/static/actives/jinpaifuwu.html" class="sec8" target="_blank"></a>
+                    <div>
+                    	<p>金牌客服</p>
+                    	<span>7*24小时优质售后服务</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <p style="height: 1px; background: #E6E6E6; overflow: hidden; width: 100%; margin: 0 auto; border-bottom: 1px solid #fdfdfd"></p>
+        <div class="wrap clearfix" style="padding: 60px 0">
+            <div class="footer-help clearfix">
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd><a href="http://www.xzhuang.com/pages/help_memSign.htm" target="_blank">用户注册</a></dd>
+                    <dd><a href="http://www.xzhuang.com/cas/forgotPassword" target="_blank">找回密码</a></dd>
+                    <dd><a href="http://www.xzhuang.com/pages/help_flow.htm" target="_blank">购物流程</a></dd>
+                </dl>
+                <dl>
+                    <dt>安全支付</dt>
+                    <dd><a href="http://www.xzhuang.com/pages/help_pay_online.htm" target="_blank">在线支付</a></dd>
+                    <dd><a href="http://www.xzhuang.com/pages/help_card.htm" target="_blank">会员储值</a></dd>
+                    <dd><a href="http://www.xzhuang.com/pages/help_pay_delivery.htm" target="_blank">货到付款</a></dd>
+                </dl>
+                <dl>
+                    <dt>配送流程</dt>
+                    <dd><a href="http://www.xzhuang.com/pages/help_deliveryNotes.htm" target="_blank">配送说明</a></dd>
+                    <dd><a href="http://www.xzhuang.com/pages/help_sign_for.htm" target="_blank">验货查收</a></dd>
+                    <dd><a href="http://www.xzhuang.com/pages/help_packge.htm" target="_blank">商品包装</a></dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd><a href="http://www.xzhuang.com/pages/help_goods.htm" target="_blank">100%正品</a></dd>
+                    <dd><a href="http://www.xzhuang.com/pages/help_goods.htm#zhengce" target="_blank">退换货政策</a></dd>
+                    <dd><a href="http://www.xzhuang.com/pages/help_goods.htm#liucheng" target="_blank">退换货流程</a></dd>
+                </dl>
+            </div>
+
+            <div class="bottom-code">
+                <p>关注微信服务号</p>
+                <p style="margin-top: 12px"><img src="http://image.xzhuang.com/static/index/image/bottomCode.jpg" alt=""/ style="width:80px;height:80px"></p>
+            </div>
+
+            <div class="newHome-foot-contact">
+                <p>全国统一客服热线</p>
+                <p class="contact-tel">400-036-9090</p>
+                <p>服务时间：08：30-24：00</p>
+                <p>客服邮箱：<a href="mailto:kefu@pingdagroup.com">kefu@pingdagroup.com</a></p>
+                <p>投诉邮箱：<a href="mailto:monitor@xzhuang.com">monitor@xzhuang.com</a></p>
+            </div>
+        </div>
+        <p style="height: 1px; background: #E6E6E6; overflow: hidden; width: 1100px; margin: 0 auto; border-bottom: 1px solid #fdfdfd"></p>
+    </div>
+    <div class="foot2">
+        <div class="foot2_center1">
+            <a href="http://www.xzhuang.com/pages/help_about.htm" target="_balnk">关于欲妆</a>|
+            <a href="http://www.xzhuang.com/pages/help_pravacy.htm" target="_balnk">隐私声明</a> |
+            <a href="http://www.xzhuang.com/pages/map.html" target="_balnk">网站地图</a> |
+            <a href="http://www.xzhuang.com/pages/help_contact.htm" target="_balnk">联系我们</a>
+        </div>
+        <div class="foot2_center1">Copyright 2008-2017 校妆网 Xzhuang.com 版权所有 <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备15046755号</a> <a href="https://tsm.miit.gov.cn/pages/home.aspx" target="_blank">沪B2-20150103</a></div>
+        <div class="foot2_center2">
+            <a href="https://www.alipay.com/aip/aip_validate_list.htm?trust_id=AIP11023279" target="_blank">
+                <img src="http://image.xzhuang.com/static/index/img/zfb_18.jpg">
+            </a>
+            <span class=" pro_box">
+                <a href="https://ss.knet.cn/verifyseal.dll?sn=e13111311010043401mz7o000000&amp;ct=df&amp;a=1&amp;pa=0.2585329881403595" id="kx_verify" tabindex="-1" target="_blank" kx_type="图标式">
+                    <img src="http://image.xzhuang.com/static/index/img/cnnic.png" oncontextmenu="return false;" alt="可信网站">
+                </a>
+            </span>
+            <a href="http://net.china.com.cn/" target="_blank">
+                <img src="http://image.xzhuang.com/static/index/img/zfb_20.jpg">
+            </a>
+        </div>
+    </div>
+</div>
+<div style="width:300px;margin:0 auto; padding:20px 0;">
+ 	 <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011402002001" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="http://image.skin79.com.cn/static/skin79/images/beian.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">沪公网安备 31011402002001号</p></a>
+ 	</div>
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fae7e5b65434a8e47b8ac5b10a15cc0a5' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    window["_BFD"] = window["_BFD"] || {};
+    _BFD.client_id = "Ctest_xiaozhuang";
+    _BFD.script = document.createElement("script");
+    _BFD.script.type = "text/javascript";
+    _BFD.script.async = true;
+    _BFD.script.charset = "utf-8";
+    _BFD.script.src = (('https:' == document.location.protocol?'https://ssl-static1':'http://static1')+'.baifendian.com/service/xiaozhuang/xiaozhuang.js');
+    document.getElementsByTagName("head")[0].appendChild(_BFD.script);
+</script>
+<!--<script src="http://www.sobot.com/chat/pc/pc.min.js?sysNum=2f7073888a884f2aa2cc3110c17d01aa" id="zhichiload" ></script>-->
+<div id="zhichiBtnBox" style="position: fixed; z-index: 2147483583; box-sizing: content-box; top: 50%; margin-top: -104px; width: 40px; border-radius: 5px 0px 0px 5px; right: 0px; transition: all 0.3s ease-in-out 0.1s; background: rgb(255, 107, 176);"><a hidefocus="" id="zhichiBtn" target="_blank" href="http://www.sobot.com/chat/pc/index.html?sysNum=2f7073888a884f2aa2cc3110c17d01aa" style="text-decoration: none; outline: none; font-family: Microsoft Yahei, Arial, Helvetica; color: #fff; font-size: 16px; display: inline-block; margin: 0; padding: 0; border: none; height: 100%; width: 100%;"><img style="vertical-align: middle; width: 25px; border:none; margin: 15px 0px 15px 4px;" src="http://www.sobot.com/chat/pc/img/zhichichatBtnBg1.png"><span style="font-family: Microsoft Yahei, Arial, Helvetica; color: #fff; font-size:16px; margin: 0; padding: 0; margin-left: 10px; margin-bottom: 20px; display: inline-block; width: 1em; word-break: break-all; white-space: pre-wrap;">咨询在线客服</span></a><span id="zhichiCount" style="height: 30px; width: 30px; line-height: 30px; border: 1px solid #FFFFFF; border-radius: 50%; background-color: red; color: #FFFFFF; text-align: center; display: none; position: absolute; bottom: -15px; left: -15px;"></span></div>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?c47c94270ae461acc1df190fceeeb69b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+<!--[if lt IE 7 ]>
+<script type="text/javascript" src="http://image.xzhuang.com/static/beautiful/js/DD_belatedPNG_0.0.8a.js"></script>
+<script type="text/javascript">
+    DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+</html>

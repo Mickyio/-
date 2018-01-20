@@ -1,0 +1,310 @@
+$bg:#fff #e1e1e1;
+@mixin wrap{
+	width: 1000px;
+    margin: 0 auto;
+    
+}
+@mixin form_td{
+	position: relative;
+}
+@mixin input_style{
+	border: 1px solid nth($bg,2);
+    width: 192px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 0 0 111px;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+}
+@mixin clearfix{
+	content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+body{
+	background:nth($bg,1);
+}
+.product_type{
+	.products_type_nav{
+	display:none;
+	}
+	&:hover{
+		.products_type_nav{
+			display:block;
+			}
+	}
+}
+.detail_body{
+	width: 100%;
+    text-align: center;
+    .detail_wrap{
+    	@include wrap;
+    	text-align: left;
+    	position: relative;
+    }
+}
+@mixin input_style_two{
+	border: 1px solid #e1e1e1;
+    width: 192px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 0 0 111px;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+}
+@mixin input_style{
+	border: 1px solid #e1e1e1;
+    width: 315px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 5px;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+}
+@mixin u{
+	text-decoration: none;
+    position: absolute;
+    top: 0%;
+    left: 6px;
+    font-size: 14px;
+    color: #A9A9A9;
+}
+@mixin i{
+	padding: 0 5px;
+    color: #FF9065;
+    font-style: normal;
+    font-weight: 400;
+}
+@mixin btn{
+	background: url(../images/phone_attes02.jpg) no-repeat;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    margin-top: 15px;
+    width: 106px;
+}
+@mixin td{
+	vertical-align: middle;
+	position: relative;
+}
+
+.content{
+	background:nth($bg,1);
+	width: 1098px; 
+	margin: 30px auto 50px;
+	border: solid 1px $bg;
+	form .RegisterWrap{
+		height: 560px;
+    	background-size: 100% 95%;
+		background: url(../images/bg.jpg) 0 0 no-repeat;
+		margin-top:10px;
+		
+		float: right; 
+		padding:16px 0 0 46px; 
+		
+		height: 650px;
+    
+	    background-size: 100% 100%;
+	   
+	    width: 365px;
+	    .info{
+			margin: 20px 0 0 -5px;
+			h2{
+				border-right: 3px solid #E1E1E1;
+			    font-size: 22px;
+			    font-style: normal;
+			    display: inline;
+			    color: #FF1574;
+			    padding-right: 42px;
+			    margin: 3px 65px 0 0;
+			}
+			a{
+				strong{
+					color: #E4257F;
+					font-weight: bold;
+				}
+			}
+	    }
+	    .form{
+	    	    /* padding: 15px 0 27px; */
+		    margin: 2px 0 0 -3px;
+		    position: relative;
+		    height: 367px;
+		    .form_con{
+		    	width: 342px;
+		    	vertical-align: middle;
+		    	/* tr{
+		    		display: inline-block;
+				    height: 65px;
+				    line-height: 65px;
+				    td{
+				    	vertical-align: middle;
+				    	@include form_td;
+				    	input{
+				    		@include input_style;
+				    		.input_phone_yzm{
+				    			@include input_style;
+				    		}
+				    		.Verification_btn{
+				    			background: url(/static/index/img/phone_attes02.jpg) no-repeat;
+							    border: medium none;
+							    cursor: pointer;
+							    display: block;
+							    height: 28px;
+							    margin-top: 15px;
+							    width: 106px;
+				    		}
+				    	}
+				    	u{
+				    		    text-decoration: none;
+							    position: absolute;
+							    top: 0%;
+							    left: 6px;
+							    font-size: 14px;
+							    color: #A9A9A9;
+				    	}
+				    	i{
+				    		    padding: 0 5px;
+    							color: #FF9065;
+				    	}
+				    	.last{
+				    		margin-right: 0;
+    						padding-right: 0;
+    						span{
+    							u{
+    								    text-decoration: none;
+									    position: absolute;
+									    top: 0%;
+									    left: 6px;
+									    font-size: 14px;
+									    color: #A9A9A9;
+									    .input_yzm{
+									    	    width: 125px;
+									    	    padding-left: 10px;
+									    	    @include input_style;
+									    }
+    							}
+    							i{
+    								padding: 0 5px;
+								    color: #FF9065;
+								    position: absolute;
+								    top: 0;
+								    right: 96px;
+    							}
+    							img{
+    								width: 98px;
+								    height: 50px;
+								    line-height: 50px;
+								    margin-bottom: -20px;
+								    margin-left: 15px;
+    							}
+    						}
+				    	}
+				    }
+		    	} */
+		    	tr:nth-of-type(1){
+		    		td{
+		    			@include td;
+		    			input{
+		    				@include input_style_two;
+		    			}
+		    			u{
+							@include u;
+		    			}
+		    			i{
+		    				@include i;
+		    			}
+		    		}
+		    	}
+		    	tr:nth-of-type(2){
+		    		td{
+		    				@include td;
+		    			    margin-right: 0;
+    						padding-right: 0;
+    						#captcha{
+    							
+    							padding-left: 10px;
+    							@include input_style;
+    							width: 125px;
+    						}
+    						u{
+    							@include u;
+    						}
+    						i{
+    							@include i;
+    						}
+    						#vcodeimg{
+    							width: 98px;
+							    height: 50px;
+							    line-height: 50px;
+							    margin-bottom: -20px;
+							    margin-left: 15px;
+    						}
+		    		}
+		    	}
+		    	tr:nth-of-type(3){
+		    		td{
+		    			    @include td;
+		    			    #auth_code{
+								@include input_style;
+
+		    			    }
+		    			    #phoattesv2_btn{
+								@include btn;
+		    			    }
+		    		}
+		    	}
+				tr:nth-of-type(4){
+					td{
+						@include td;
+						#password{
+							@include input_style_two;
+							@include input_style;
+						}
+						u{
+							@include u;
+						}
+						i{
+							@include i;
+						}
+					}
+				}
+				tr:nth-of-type(5){
+					display: inline-block;
+				    height: 65px;
+				    line-height: 65px;
+				    td{
+				    	@include td;
+				    	#repassword{
+				    		@include input_style_two;
+				    	}
+				    	u{
+				    		@include u;
+				    	}
+				    	i{
+				    		@include i;
+				    	}
+				    }
+				}
+		    }
+
+	    }
+	
+	    
+	}
+	.Register_left{
+		    padding-top: 110px;
+		    margin-left: 80px;
+		    text-align: center;
+		    float: left;
+		    font-family: "microsoft yahei";
+		    width: 469px;
+	}
+	.clearfix{
+		@include clearfix;
+	}
+
+}

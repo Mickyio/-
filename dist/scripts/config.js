@@ -7,6 +7,9 @@ requirejs.config({
 		"goodlist":"scripts/goodList",
 		"cookie":"scripts/jquery.cookie",
 		"shop":"scripts/shoppingcart",
-		"getData":"scripts/getData"
+		"getData":"scripts/getData",
+		"getBrand":"scripts/getBrand",
+		"getRecomend":"scripts/getRecomend",
+		"count_down":"scripts/count_down"
 	}
 })

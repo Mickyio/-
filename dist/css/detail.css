@@ -1,0 +1,14 @@
+.product_type .products_type_nav {
+  display: none; }
+
+.product_type:hover .products_type_nav {
+  display: block; }
+
+.detail_body {
+  width: 100%;
+  text-align: center; }
+  .detail_body .detail_wrap {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative; }

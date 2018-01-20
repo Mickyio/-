@@ -14,6 +14,7 @@ gulp.task("watch",()=>{
 	gulp.watch(["es6/*.js","!module/**/*"],["es6"]);
 	gulp.watch(["scss/*.scss"],["sass"]);
 	gulp.watch(["images/**",],["image"]);
+	gulp.watch(["data/*.json",],["json"]);
 
 
 })
@@ -46,7 +47,7 @@ gulp.task("json",()=>{
 				// .src(["html/*"])
 				// .src(["html/**/*"])所有
 				// .src(["html/**/*","html/**/*.html"])实现平铺
-				.src(["libs/*.json"])
+				.src(["data/*.json"])
 				.pipe(gulp.dest("dist/scripts"))//建立dist文件
 				//.pipe(connect.reload());//自动刷新
 })
@@ -55,7 +56,7 @@ gulp.task("json",()=>{
 gulp.task('image',()=>{
 	return gulp
 				.src(["images/**"])
-				.pipe(gulp.dest("dist"))//建立dist文件
+				//建立dist文件
 				.pipe(gulp.dest("dist/images"));//自动刷新
 })
 

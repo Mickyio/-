@@ -1,7 +1,7 @@
 /*主页业务逻辑页面*/	
 //requirejs === require
 require(["scripts/config.js"],function(){ //先去配置;
-	require(["jquery","supperbanner","getData"/*,"pop","shopping","loadLi"*/],function($,sup,getData/*,pop,shop,loadli*/){//再去使用简写的路径;
+	require(["jquery","supperbanner","getData","getBrand","getRecomend","count_down"/*,"pop","shopping","loadLi"*/],function($,sup,getData,getBrand,getRecomend,count_down/*,pop,shop,loadli*/){//再去使用简写的路径;
 		//console.log($);
 		// $(".container").css({
 		// 	background : '#ddd'
@@ -16,9 +16,18 @@ require(["scripts/config.js"],function(){ //先去配置;
 				"http://image.xzhuang.com/upload/20170926/101041c87377dba579eac7a698aaeb932c44ad.jpg",
 				"http://image.xzhuang.com/upload/20180116/1829372f346f1cef797f3762915164a6acf0c6.jpg"
 			],
-			autoplay:true
+			autoplay:true,
+			create_btn:true
 		})
 		getData.init();
+
+		getBrand.init();
+
+		getRecomend.init();
+
+		count_down;
+		
+		
 
 		/*登陆框*/
 		//console.log(pop.init())
