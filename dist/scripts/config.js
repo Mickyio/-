@@ -10,6 +10,7 @@ requirejs.config({
 		"getData":"scripts/getData",
 		"getBrand":"scripts/getBrand",
 		"getRecomend":"scripts/getRecomend",
-		"count_down":"scripts/count_down"
+		"count_down":"scripts/count_down",
+		"Register":"scripts/register"
 	}
 })

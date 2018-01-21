@@ -17,7 +17,7 @@ $bg:#fff #e1e1e1;
     font-family: "microsoft yahei";
 }
 @mixin clearfix{
-	content: ".";
+	content: "";
     display: block;
     height: 0;
     clear: both;
@@ -74,8 +74,7 @@ body{
 @mixin i{
 	padding: 0 5px;
     color: #FF9065;
-    font-style: normal;
-    font-weight: 400;
+    
 }
 @mixin btn{
 	background: url(../images/phone_attes02.jpg) no-repeat;
@@ -86,9 +85,58 @@ body{
     margin-top: 15px;
     width: 106px;
 }
-@mixin td{
+@mixin wrap_table_td{
 	vertical-align: middle;
+	
+}
+
+@mixin table_td{
 	position: relative;
+}
+@mixin form_table_tr{
+	display: inline-block;
+    height: 65px;
+    line-height: 65px;
+}
+@mixin btn_register{
+	margin: 3px 0 0 -3px;
+    background: url(../img/btn1.jpg);
+    border-radius: 3px;
+    width: 315px;
+    height: 45px;
+    line-height: 45px;
+    /* margin: -96px 0 0 -100px; */
+}
+@mixin btn_submit{
+	font-size: 18px;
+    color: #fff;
+    width: 90px;
+    height: 36px;
+    cursor: pointer;
+    margin-top: 5px;
+    border: none;
+    /* text-indent: -9999px; */
+    background-repeat: no-repeat;
+    display: block;
+}
+@mixin wrap_label_error{
+	width:293px;
+}
+@mixin label_error{
+	    color: #fff;
+    background: #ff83b5;
+    width: 315px;
+    padding: 0 5px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    display: block;
+    font-family: "microsoft yahei";
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+    z-index: 2;
+    border: solid #e73a77 1px;
 }
 
 .content{
@@ -136,78 +184,17 @@ body{
 		    .form_con{
 		    	width: 342px;
 		    	vertical-align: middle;
-		    	/* tr{
-		    		display: inline-block;
-				    height: 65px;
-				    line-height: 65px;
-				    td{
-				    	vertical-align: middle;
-				    	@include form_td;
-				    	input{
-				    		@include input_style;
-				    		.input_phone_yzm{
-				    			@include input_style;
-				    		}
-				    		.Verification_btn{
-				    			background: url(/static/index/img/phone_attes02.jpg) no-repeat;
-							    border: medium none;
-							    cursor: pointer;
-							    display: block;
-							    height: 28px;
-							    margin-top: 15px;
-							    width: 106px;
-				    		}
-				    	}
-				    	u{
-				    		    text-decoration: none;
-							    position: absolute;
-							    top: 0%;
-							    left: 6px;
-							    font-size: 14px;
-							    color: #A9A9A9;
-				    	}
-				    	i{
-				    		    padding: 0 5px;
-    							color: #FF9065;
-				    	}
-				    	.last{
-				    		margin-right: 0;
-    						padding-right: 0;
-    						span{
-    							u{
-    								    text-decoration: none;
-									    position: absolute;
-									    top: 0%;
-									    left: 6px;
-									    font-size: 14px;
-									    color: #A9A9A9;
-									    .input_yzm{
-									    	    width: 125px;
-									    	    padding-left: 10px;
-									    	    @include input_style;
-									    }
-    							}
-    							i{
-    								padding: 0 5px;
-								    color: #FF9065;
-								    position: absolute;
-								    top: 0;
-								    right: 96px;
-    							}
-    							img{
-    								width: 98px;
-								    height: 50px;
-								    line-height: 50px;
-								    margin-bottom: -20px;
-								    margin-left: 15px;
-    							}
-    						}
-				    	}
-				    }
-		    	} */
+		    	tr td input:hover{
+		    		border: solid 1px #e73a77;
+				    box-shadow: 0px 0px 15px #e73a77;
+				    -webkit-box-shadow: 0px 0px 15px #e73a77;
+		    	}
+		    	
 		    	tr:nth-of-type(1){
+		    		@include form_table_tr;
 		    		td{
-		    			@include td;
+		    			@include wrap_table_td;
+		    			@include table_td;
 		    			input{
 		    				@include input_style_two;
 		    			}
@@ -217,58 +204,123 @@ body{
 		    			i{
 		    				@include i;
 		    			}
+		    			.ok{
+				    			position:absolute;
+				    			top: 20px;
+				    			right: -13px;
+				    			display: none;
+				    			//display: none;
+				    		}
+				    	.errors{
+				    		@include label_error;
+	    					@include wrap_label_error;
+	    					display: none;
+
+				    	}
 		    		}
 		    	}
 		    	tr:nth-of-type(2){
+		    		display: inline-block;
+				    height: 65px;
+				    line-height: 65px;
+				    width: 326px;
 		    		td{
-		    				@include td;
+		    				@include wrap_table_td;
+		    				@include table_td;
 		    			    margin-right: 0;
     						padding-right: 0;
-    						#captcha{
-    							
-    							padding-left: 10px;
-    							@include input_style;
-    							width: 125px;
+    						border-collapse: separate;
+    						width: 326px;
+    						height: 64.55px;
+    						span{
+	    							#captcha{
+	    							
+	    							padding-left: 10px;
+	    							@include input_style;
+	    							width: 125px;
+	    						}
+	    						.errors{
+	    							@include label_error;
+	    							@include wrap_label_error;
+	    							display: none;
+	    						}
     						}
     						u{
     							@include u;
     						}
     						i{
-    							@include i;
+    								@include i;
+    							    padding: 0 5px;
+								    color: #FF9065;
+								    position: absolute;
+								    top: 0;
+								    right: 160px;
     						}
+    					
     						#vcodeimg{
+    							display: inline;
     							width: 98px;
 							    height: 50px;
 							    line-height: 50px;
 							    margin-bottom: -20px;
 							    margin-left: 15px;
+							    position:absolute;
+							    right: 50px;
     						}
 		    		}
 		    	}
 		    	tr:nth-of-type(3){
+		    		@include form_table_tr;
 		    		td{
-		    			    @include td;
+		    			    @include wrap_table_td;
+		    			    @include table_td;
 		    			    #auth_code{
 								@include input_style;
 
+
 		    			    }
+
 		    			    #phoattesv2_btn{
 								@include btn;
 		    			    }
+		    			    .errors{
+									@include label_error;
+									@include wrap_label_error;
+									display: none;
+								}
+								.ok{
+									position:absolute;
+									top:10px;
+									right: -30px;
+									display: none;
+								}
 		    		}
 		    	}
 				tr:nth-of-type(4){
+					@include form_table_tr;
 					td{
-						@include td;
+						 @include wrap_table_td;
+						 @include table_td;
 						#password{
 							@include input_style_two;
-							@include input_style;
+							
 						}
 						u{
 							@include u;
 						}
 						i{
 							@include i;
+						}
+						.errors{
+							@include label_error;
+							@include wrap_label_error;
+							display: none;
+						}
+						.ok{
+							position:absolute;
+							right: -15px;
+							top: 25px;
+							display: none;
 						}
 					}
 				}
@@ -277,17 +329,42 @@ body{
 				    height: 65px;
 				    line-height: 65px;
 				    td{
-				    	@include td;
+				    	 @include wrap_table_td;
+				    	 @include table_td;
 				    	#repassword{
 				    		@include input_style_two;
 				    	}
+				    	.errors{
+								@include label_error;
+								@include wrap_label_error;
+								display: none;
+							}
+						.ok{
+							position:absolute;
+							right: -15px;
+							top: 25px;
+							display: none;
+						}
 				    	u{
 				    		@include u;
 				    	}
 				    	i{
 				    		@include i;
+
 				    	}
 				    }
+				}
+				tr:nth-of-type(6){
+					td{
+						@include wrap_table_td;
+						@include table_td;
+						#submit{
+							
+							@include btn_submit;
+							@include btn_register;
+
+						}
+					}
 				}
 		    }
 
@@ -304,7 +381,9 @@ body{
 		    width: 469px;
 	}
 	.clearfix{
-		@include clearfix;
+		&:after{
+			@include clearfix;
+		}
 	}
 
 }

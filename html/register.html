@@ -57,8 +57,8 @@
 				<div class="search">
 					<div class="clearfix">
 						<form name="search_form">
-							<input type="text" name="search_txt" id class="search_txt" placeholder="skin 79">
-							<input type="submit" name="search_btn" id class="search_btn" value="">
+							<input type="text" name="search_txt" id="search_txt" class="search_txt" placeholder="skin 79">
+							<input type="submit" name="search_btn" id="search_btn" class="search_btn" value="">
 						</form>
 					</div>
 					<ul class="hot_words">
@@ -620,107 +620,247 @@
 	</div>
 	<!-- body开始 -->
 	<div class="content" style="">
-    <form  action=""  id="form_signup" autocomplete="off" class="signupform">
-        <div class="RegisterWrap" style="height:560px;background-size: 100% 95%">
-            
-            <div class="info">
-                <h2>注册会员</h2>
-                <span>已有账号?</span>
-                <a href="http://www.xzhuang.com/?passport--login.html"><strong>请登录</strong></a>
-            </div>
-            <div class="form">
-                <input name="forward" value="" type="hidden">
-                <table class="form_con" cellpadding="0" cellspacing="0" border="0" width="100%">
-                    <tbody>
-                                        <tr style="height: 60px;line-height: 60px">
-                        <!-- <th>用户名</th> -->
-                        <td>
-                            <input type="text" class="inputstyle-two inputstyle _x_ipt txt_name" id="phone" name="phone" value="" placeholder="请输入手机号" maxlength="25" tabindex="1"/>
-                            <u>手机号</u>
-                                                        <i>*</i>
-                            <span id="usernameTEXT"></span>
-                            <input id="hidden_login" value="0" type="hidden">
-                            
-                        </td>
-                        <!--<td class="td_active">用户名为4-20个字符，一个汉字为两个字符</td>-->
-                    </tr>
-                                        <tr style="height:65px">
-                        <!-- <th>验证码</th> -->
-                        <td class="last">
-                            <span>
-                                <input type="text" class="x-input inputstyle txt_name" id="captcha" name="captcha" placeholder="请输入验证码" maxlength="6" tabindex="6">
-                                                            </span>
-                            <u></u>
-                            <i>*</i>
-                            <img src="http://www.xzhuang.com/cas/captcha/image?id=up" alt="点击换一张" id="vcodeimg" title="看不清楚，换一张" style="cursor:pointer;" onClick="this.src='http://www.xzhuang.com/cas/captcha/image?id=up&t='+Math.random();"/>
-
-                        </td>
-                    </tr>
-                    <tr  style="height:50px">
-                        <td>
-                        	<input type="text" name="auth_code" id="auth_code" class="x-input phone_attesv2_input phone_yzm inputstyle" style="float: left; padding-left:10px; width: 125px" placeholder="请输入手机验证码"/>
-                        	<input value="" class="Verification_btn" id="phoattesv2_btn" type="button" style="float: left;margin-top: 5px;margin-left: 5px;">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <!-- <th>设置密码</th> -->
-                        <td>
-                        	<input type="password" class="x-input inputstyle-two  inputstyle txt_name" id="password" name="password" placeholder="密码为6-16个字符" maxlength="20" tabindex="2"/>
-                        	<u>设置密码</u>
-                             <span id="passwordTEXT"></span>
-                            <i>*</i>
-                       </td>
-                    </tr>
-                    <tr>
-                        <!-- <th>确认密码</th> -->
-                        <td>
-                            <input type="password" class="inputstyle-two x-input inputstyle txt_name" id="repassword" name="repassword" placeholder="请重复输入密码" maxlength="20" tabindex="3"/>
-                            <u>确认密码</u>
-                            <span id="password_rTEXT"></span>
-                            <i>*</i>
-                        </td>
-                    </tr>
-
-                    <tr style="display:block; height:55px; line-height:55px">
-                        <td style=" height:55px; line-height:55px">
-                            <input class="actbtn  btn-register" id="submit" value="同意协议并注册" type="submit" style="width:310px;background:#F60182; margin-bottom:0;">
-                            <input type="hidden" id="captchaId" name="captchaId" value=""/>
-                            <input type="hidden" name="continue" value=""/>
-                            <input type="hidden" name="_simple" value="2"/>
-                            <input name="forward" value="" type="hidden">
-                        </td>
-                    </tr>
+	    <form  action=""  id="form_signup" autocomplete="off" class="signupform">
+	        <div class="RegisterWrap" style="height:560px;background-size: 100% 95%">
+	            
+	            <div class="info">
+	                <h2>注册会员</h2>
+	                <span>已有账号?</span>
+	                <a href="http://www.xzhuang.com/?passport--login.html"><strong>请登录</strong></a>
+	            </div>
+	            <div class="form">
+	                <input name="forward" value="" type="hidden">
+	                <table class="form_con" cellpadding="0" cellspacing="0" border="0" width="100%">
+	                    <tbody>
+	                        <tr style="height: 60px;line-height: 60px">
+	                        <!-- <th>用户名</th> -->
+		                        <td>
+		                            <input type="text" class="inputstyle-two inputstyle _x_ipt txt_name" id="phone" name="phone" value="" placeholder="请输入手机号" maxlength="25" tabindex="1"/>
+		                            <u>手机号</u>
+		                                                        <i>*</i>
+		                            <span id="usernameTEXT"></span>
+		                            <input id="hidden_login" value="0" type="hidden">
+		                            <label for="phone" generated="true" class="ok">
+		                            	<img src="http://image.xzhuang.com/static/cas/img/right.jpg">
+		                            </label>
+		                            <label for="phone" generated="true" class="errors">请输入正确的手机号</label>
+		                            
+		                        </td>
+	                        <!--<td class="td_active">用户名为4-20个字符，一个汉字为两个字符</td>-->
+	                    	</tr>
+	                        <tr style="height:65px">
+	                        <!-- <th>验证码</th> -->
+		                        <td class="last">
+		                            <span>
+		                                <input type="text" class="x-input inputstyle txt_name" id="captcha" name="captcha" placeholder="请输入验证码" maxlength="6" tabindex="6">
+										<label for="captcha" generated="true" class="errors">请输入验证码</label>
 
 
-                   <tr>
-                        <td class="agree">
-                            <input id="license" name="license" value="agree" class="input_check" type="checkbox" tabindex="7" checked="checked">
-                            我已阅读并同意
-                            <a href="http://www.xzhuang.com/pages/help_memSign.htm" id="terms_error" class="lnk" target="_blank" style="color: rgb(0, 102, 204); text-decoration: none;">
-                                <span class="FormText" id="terms_error_sym">会员注册协议</span>
-                            </a>
-                            和
-                            <a href="http://www.xzhuang.com/pages/help_pravacy.htm" id="privacy_error" class="lnk" target="_blank" style="color: rgb(0, 102, 204); text-decoration: none;">
-                                <span class="FormText" id="privacy_error_sym">隐私保护政策</span>
-                            </a>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="Register_left" style="padding-top:110px">
-            <div class="pic">
-                <img src="http://image.xzhuang.com/static/cas/img/imgleft.png">
-            </div>
-            
-        </div>
-            <div class="clearfix" style="clear: none;"></div>
-        
-    </form>
-</div>
+		                            </span>
+		                            <u></u>
+		                            <i>*</i>
+		                            <img src="http://www.xzhuang.com/cas/captcha/image?id=up" alt="点击换一张" id="vcodeimg" title="看不清楚，换一张" style="cursor:pointer;" onClick="this.src='http://www.xzhuang.com/cas/captcha/image?id=up&t='+Math.random();"/>
+
+
+		                        </td>
+	                    	</tr>
+	                    <tr  style="height:50px">
+	                        <td>
+	                        	<input type="text" name="auth_code" id="auth_code" class="x-input phone_attesv2_input phone_yzm inputstyle" style="float: left; padding-left:10px; width: 125px" placeholder="请输入手机验证码"/>
+	                        	<input value="" class="Verification_btn" id="phoattesv2_btn" type="button" style="float: left;margin-top: 5px;margin-left: 5px;">
+	                        	<label for="auth_code" generated="true" class="ok">
+		                            	<img src="http://image.xzhuang.com/static/cas/img/right.jpg">
+		                            </label>
+	                        	<label for="auth_code" generated="true" class="errors">请输入手机验证码</label>
+	                        </td>
+	                    </tr>
+
+	                    <tr>
+	                        <!-- <th>设置密码</th> -->
+	                        <td>
+	                        	<input type="password" class="x-input inputstyle-two  inputstyle txt_name" id="password" name="password" placeholder="密码以字母开头的6-16个字符" maxlength="20" tabindex="2"/>
+	                        	<u>设置密码</u>
+	                             <span id="passwordTEXT"></span>
+	                            <i>*</i>
+	                             <label for="password" generated="true" class="ok">
+		                            	<img src="http://image.xzhuang.com/static/cas/img/right.jpg">
+		                         </label>
+	                            <label for="password" generated="true" class="errors">密码格式有误</label>
+	                       </td>
+	                    </tr>
+	                    <tr>
+	                        <!-- <th>确认密码</th> -->
+	                        <td>
+	                            <input type="password" class="inputstyle-two x-input inputstyle txt_name" id="repassword" name="repassword" placeholder="请重复输入密码" maxlength="20" tabindex="3"/>
+	                            <u>确认密码</u>
+	                            <span id="password_rTEXT"></span>
+	                            <i>*</i>
+	                             <label for="repassword" generated="true" class="ok">
+		                            	<img src="http://image.xzhuang.com/static/cas/img/right.jpg">
+		                         </label>
+	                            <label for="repassword" generated="true" class="errors">请确认密码</label>
+
+	                        </td>
+	                    </tr>
+
+	                    <tr style="display:block; height:55px; line-height:55px">
+	                        <td style=" height:55px; line-height:55px">
+	                            <input class="actbtn  btn-register" id="submit" value="同意协议并注册" type="submit" style="width:310px;background:#F60182; margin-bottom:0;">
+	                            <input type="hidden" id="captchaId" name="captchaId" value=""/>
+	                            <input type="hidden" name="continue" value=""/>
+	                            <input type="hidden" name="_simple" value="2"/>
+	                            <input name="forward" value="" type="hidden">
+	                        </td>
+	                    </tr>
+
+
+	                   <tr>
+	                        <td class="agree">
+	                            <input id="license" name="license" value="agree" class="input_check" type="checkbox" tabindex="7" checked="checked">
+	                            我已阅读并同意
+	                            <a href="http://www.xzhuang.com/pages/help_memSign.htm" id="terms_error" class="lnk" target="_blank" style="color: rgb(0, 102, 204); text-decoration: none;">
+	                                <span class="FormText" id="terms_error_sym">会员注册协议</span>
+	                            </a>
+	                            和
+	                            <a href="http://www.xzhuang.com/pages/help_pravacy.htm" id="privacy_error" class="lnk" target="_blank" style="color: rgb(0, 102, 204); text-decoration: none;">
+	                                <span class="FormText" id="privacy_error_sym">隐私保护政策</span>
+	                            </a>
+	                        </td>
+	                    </tr>
+	                    </tbody>
+	                </table>
+	            </div>
+	        </div>
+	        <div class="Register_left" style="padding-top:110px">
+	            <div class="pic">
+	                <img src="http://image.xzhuang.com/static/cas/img/imgleft.png">
+	            </div>
+	            
+	        </div>
+	            <div class="clearfix" style="clear: none;"></div>
+	        
+	    </form>
+	</div>
+	<!-- 脚部 -->
+	<div class="footer">
+		<div class="footer_top">
+			<p class="liner"></p>
+			<div class="security">
+				<ul>
+					<li>
+						<a href=""></a>
+						<div>
+							<p>正品承诺</p>
+							<span>100%正品保障</span>
+						</div>
+					</li>
+					<li>
+						<a href=""></a>
+						<div>
+							<p>正品承诺</p>
+							<span>100%正品保障</span>
+						</div>
+					</li>
+					<li>
+						<a href=""></a>
+						<div>
+							<p>正品承诺</p>
+							<span>100%正品保障</span>
+						</div>
+					</li>
+					<li>
+						<a href=""></a>
+						<div>
+							<p>正品承诺</p>
+							<span>100%正品保障</span>
+						</div>
+					</li>
+					<li class="last_li">
+						<a href=""></a>
+						<div>
+							<p>正品承诺</p>
+							<span>100%正品保障</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="footer_con" style="padding: 60px 0">
+				<div class="footer_help">
+					<dl>
+						<dt>新手指南</dt>
+						<dd>
+							<a href="">用户注册</a>
+						</dd>
+						<dd>
+							<a href="">找回密码</a>
+						</dd>
+						<dd>
+							<a href="">购物流程</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>新手指南</dt>
+						<dd>
+							<a href="">用户注册</a>
+						</dd>
+						<dd>
+							<a href="">找回密码</a>
+						</dd>
+						<dd>
+							<a href="">购物流程</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>新手指南</dt>
+						<dd>
+							<a href="">用户注册</a>
+						</dd>
+						<dd>
+							<a href="">找回密码</a>
+						</dd>
+						<dd>
+							<a href="">购物流程</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>新手指南</dt>
+						<dd>
+							<a href="">用户注册</a>
+						</dd>
+						<dd>
+							<a href="">找回密码</a>
+						</dd>
+						<dd>
+							<a href="">购物流程</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="code">
+					<p>关注微信服务号</p>
+					<p style="margin-top: 12px">
+						<img src="http://image.xzhuang.com/static/index/image/bottomCode.jpg" style="width:80px;height:80px">
+					</p>
+				</div>
+				<div class="contact">
+					<p>全国统一客服热线</p>
+					<p class="tel">400-036-9090</p>
+					<p>服务时间：08：30-24：00</p>
+					<p>
+						客服邮箱：
+						<a href="">kefu@pingdagroup.com</a>
+					</p>
+					<p>
+						投诉邮箱：
+						<a href="">monitor@xzhuang.com</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bot"></div>
+	</div>
 
 	
 </body>
+<script  src="scripts/require.js"></script>
+<script  src="scripts/index.js"></script>
 </html>

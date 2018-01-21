@@ -5,43 +5,10 @@ define(['jquery'],function(){
 	getRecomend.prototype={
 		constructor:getRecomend,
 		init:function(){
-			//this.hot_product_list=$(".hot_product_list").find("li");
-			this.hot_product_list=$(".hot_product_list");
-			//this.user_center=$(".user_center");
-			/*this.hot_img=$(".hot_img").find("a").find("img");
-			this.sale_slogan=$(".sale_pink");
-			this.hot_product_brand=this.hot_product_list.find("h2").find("a");
-			this.hot_product_title=$(".hot_img").find("p");
-			console.log(this.hot_product_brand)
-			this.priced=$(".priced");
-			this.price=$("price");
-			this.sale_num=$(".sale_num").find("strong");
-			this.discount=$(".discount")*/
-			/*$(".user_center").mouseenter($.proxy(this.showhide("block"),this));
-			$(".user_center").mouseleave($.proxy(this.showhide("none"),this));*/
-			/*$(".content_brand").find("li").mouseenter(function(){
-				$(".brand_detail").slideUp("slow",function(){
-				  	$(".brand_detail").css("bottom","0")
-				 });
-			})*/
-
-			/*$(".content_brand").find("li").mouseenter(function(){
-				  $(".brand_detail").animate({ 
-				    bottom: 0
-				    
-				  }, 500 );
-				});
-			$(".content_brand").find("li").mouseleave(function(){
-				  $(".brand_detail").animate({ 
-				    bottom: -97px
-				    
-				  }, 500 );
-				});*/
 			
-			//this.user_center.on("mouseleave",$.proxy(this.hide,this));
-			//this.user_center_unflod=$(".user_center_unflod");
-			//console.log(this.user_center_unflod)
-			//console.log(this.hot_product_list)
+			this.hot_product_list=$(".hot_product_list");
+			
+		
 			var setup={
 				url:"scripts/recomend.json",
 				type:"GET",
@@ -49,13 +16,13 @@ define(['jquery'],function(){
 			}
 			$.ajax(setup).then($.proxy(this.rendring,this));
 		},
-		/*showhide:function($status){
+		showhide:function($status){
 			if($status ="none"){
 				$(".user_center_unflod").css("display","none");
 			}else{
 				$(".user_center_unflod").css("display","block")
 			}
-		},*/
+		},
 		rendring:function(res){
 			//console.log(res);
 			//var _this=this;

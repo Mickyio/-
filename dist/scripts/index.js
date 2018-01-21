@@ -1,11 +1,12 @@
 /*主页业务逻辑页面*/	
 //requirejs === require
 require(["scripts/config.js"],function(){ //先去配置;
-	require(["jquery","supperbanner","getData","getBrand","getRecomend","count_down"/*,"pop","shopping","loadLi"*/],function($,sup,getData,getBrand,getRecomend,count_down/*,pop,shop,loadli*/){//再去使用简写的路径;
+	require(["jquery","supperbanner","getData","getBrand","getRecomend","count_down","Register"/*,"pop","shopping","loadLi"*/],function($,sup,getData,getBrand,getRecomend,count_down,Register/*,pop,shop,loadli*/){//再去使用简写的路径;
 		//console.log($);
 		// $(".container").css({
 		// 	background : '#ddd'
 		// })
+		
 
 		/*轮播图*/
 		
@@ -26,6 +27,8 @@ require(["scripts/config.js"],function(){ //先去配置;
 		getRecomend.init();
 
 		count_down;
+
+		Register;
 		
 		
 

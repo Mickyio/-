@@ -106,6 +106,14 @@ body,html{
 	position:relative;
 }
 
+@mixin transitionall($arguments:all 1s){
+	-webkit-transition:$arguments;
+	-o-transition:$arguments;
+	-ms-transition:$arguments;
+	-moz-transition:$arguments;
+	transition:$arguments;
+}
+
 	.head_top{
 		background:nth($bg,1);
 		text-align:center;
@@ -922,6 +930,7 @@ body,html{
 									    left: 0;
 									    bottom: -97px;
 									    overflow: hidden;
+									    @include transitionall(bottom 0.5s);
 								    }
 								    &:hover .brand_detail{
 								    	bottom:0;
@@ -937,8 +946,9 @@ body,html{
 		    }
 		&:after{
 		@include clearfix;
+		}
 	}
-	}
+
 
 }
 .content_recm{
@@ -999,10 +1009,13 @@ body,html{
     }
 }
 .content_hot{
+	 width: 1100px;
+   	 margin: 30px auto;
 	h2{
-		    width: 1100px;
-   			 margin: 30px auto 0;
+		   
     	@include tit;
+	    	position: relative;
+	    	overflow: hidden;
     	b{
     		    font-size: 14px;
 			    color: #d8d8d8;

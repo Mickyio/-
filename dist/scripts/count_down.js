@@ -8,29 +8,24 @@ define(['jquery'],function(){
 		init:function(){
 			/*this.nowtime=new Date();*/
 			this.menu=$(".menu");
-			this.scrollTop=$(document).scrollTop();
+			
 			//console.log(scrollTop);
 			this.content=$(".content");
 			//console.log(this.content);
 			console.log(this.scrollTop)
 			this.$p=$(".time_con");
 			console.log(this.$p)
+
+			//公告
+			
+			
 	
 			// console.log(this.$p);
-			this.$p.attr("active-data-val","1516950000");
+			this.$p.attr("active-data-val","1517980000");
 			this.endtime=$(".time_con").attr("active-data-val");
 			this.showhide();
 			this.timer=null;
-			$(window).scroll($.proxy(this.showhide,this));
-
-
-/*			this.cha=this.endtime-Math.round(new Date().getTime()/1000-28800);
-			
-
-			this.$day=Math.floor(this.cha/(60*60*24));
-			this.$hour=Math.floor(this.cha/(60*60))%24;
-			this.$minute=Math.floor(this.cha/60)%60;
-			this.$second=Math.floor(this.cha)%60;*/
+			$(window).on("scroll",$.proxy(this.showhide,this));
 			this.rendring();
 
 		},
@@ -38,16 +33,19 @@ define(['jquery'],function(){
 
 
 				
-				var _this=this;
-				clearTimeout(_this.timer2);
+				//var _this=this;
+				this.scrollTop=$(document).scrollTop();
+				//console.log(this.scrollTop)
+				clearTimeout(this.timer2);
 				//console.log(_this.menu)   _this.content[0].offsetTop
-				_this.timer2=setTimeout(function(){
-					if(_this.scrollTop>=1000){
+				var _this=this;
+				this.timer2=setTimeout(function(){
+					if(_this.scrollTop>=800){
 						_this.menu.css("display","block");
 					}else{
 						_this.menu.css("display","none")
 					}
-				},800)
+				},500)
 			
 			
 			
