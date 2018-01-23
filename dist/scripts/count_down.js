@@ -12,27 +12,30 @@ define(['jquery'],function(){
 			//console.log(scrollTop);
 			this.content=$(".content");
 			//console.log(this.content);
-			console.log(this.scrollTop)
+			//console.log(this.scrollTop)
 			this.$p=$(".time_con");
-			console.log(this.$p)
+			//console.log(this.$p)
 
 			//公告
 			
-			
-	
+			//右侧菜单
+			this.right_menu=$(".newHome_toolBar");
+			this.back=this.right_menu.find(".newHome-toolBar-gototop");
+			//console.log(this.back)
 			// console.log(this.$p);
 			this.$p.attr("active-data-val","1517980000");
 			this.endtime=$(".time_con").attr("active-data-val");
 			this.showhide();
 			this.timer=null;
 			$(window).on("scroll",$.proxy(this.showhide,this));
+			$(this.back).on("click",$.proxy(this.back_totop,this));
 			this.rendring();
 
 		},
 		showhide:function(){
 
 
-				
+				//侧边菜单的显示隐藏
 				//var _this=this;
 				this.scrollTop=$(document).scrollTop();
 				//console.log(this.scrollTop)
@@ -41,13 +44,20 @@ define(['jquery'],function(){
 				var _this=this;
 				this.timer2=setTimeout(function(){
 					if(_this.scrollTop>=800){
+						_this.right_menu.css("display","block");
 						_this.menu.css("display","block");
 					}else{
-						_this.menu.css("display","none")
+						_this.menu.css("display","none");
+						_this.right_menu.css("display","none");
 					}
 				},500)
 			
 			
+			
+		},
+		back_totop:function(){
+				//返回顶部
+				$('html , body').animate({scrollTop: 0},'slow');
 			
 		},
 		rendring:function(){

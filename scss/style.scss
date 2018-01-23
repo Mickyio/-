@@ -760,6 +760,8 @@ body,html{
     								img{
 									    height: 245px;
 										display: block;
+										width: 100%;
+										height:100%;
     								}
 						    	}
 						    	.time{
@@ -1237,6 +1239,35 @@ body,html{
 	padding-right: 25px;
 	border-right: 1px solid #EFEFEF;
 }
+.newHome_toolBar{
+	width: 65px;
+     height: 280px;
+    height: 140px;
+    background: #fff;
+    background: url(../images/toolbar.png);
+    position: fixed;
+    right: 15px;
+    top: 50%;
+    margin-top: -140px;
+    z-index: 9;
+    display: none;
+   // position: absolute;
+    li{
+    	a{
+    		display: block;
+		    width: 65px;
+		    height: 66px;
+		    margin-bottom: 5px;
+		    color: #fff;
+		    text-align: center;
+		    line-height: 3;
+		    text-indent: 3px;
+    	}
+    	.newHome-toolBar-gototop{
+    		background: url(../images/toolbar.png) no-repeat 0px -142px;
+    	}
+    }
+}
 .footer{
 	position: relative;
     background: #f7f7f7;
@@ -1467,6 +1498,195 @@ body,html{
     text-align: center;
     padding-bottom: 20px;
     }
+}
+@mixin shopcarInfo_h2{
+	font-family: Tahoma,Arial,Verdana,Simsun;
+    margin-bottom: 8px;
+    color: #666;
+}
+@mixin shopcarInfo_p{
+	font-family: Tahoma,Arial,Verdana,Simsun;
+    line-height: 20px;
+}
+@mixin shopcarInfo_f12{
+	    font-size: 12px;
+}
+@mixin btn{
+	    display: inline-block;
+	    margin-right: 5px;
+	    padding: 0;
+	    height: 23px;
+	    line-height: 23px;
+	    text-decoration: none;
+}
+@mixin em{
+	color: #fff;
+    font-weight: bold;
+    background-position: left 0;
+    border: 1px solid #ffb74c;
+}
+.util-dialog{
+	position: absolute;
+    top: -1000px;
+    left: -1000px;
+    width: 420px;
+    z-index: 9999;
+    font-size: 12px;
+	.pdb-bgt{
+		background: url(../images/dialog_bg_line.gif) no-repeat;
+	    height: 10px;
+	    line-height: 10px;
+	    padding-left: 10px;
+	        opacity: 0.16;
+    overflow: hidden;
+	    span{
+	    	display: block;
+		    background: url(../images/dialog_bg_line.gif) no-repeat right -10px;
+		    height: 10px;
+		    line-height: 10px;
+	    }
+	}
+	.pdb-bgm{
+		background-color: #000;
+    	height: 300px;
+    	opacity: 0.16;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+	}
+	.pdb-main{
+		position: absolute;
+	    height: 300px;
+	    top: 9px;
+	    left: 9px;
+	    width: 400px;
+	    z-index: 9999;
+	    border: solid 1px #beb7ad;
+	    background-color: #fff;
+	    overflow: hidden;
+	    .pdb-title{
+	    	background-color: #BB282B;
+		    color: #fff;
+		    height: 25px;
+		    overflow: hidden;
+		    h4{
+		    	float: left;
+			    font-size: 12px;
+			    font-weight: bold;
+			    line-height: 25px;
+			    height: 25px;
+			    text-indent: 10px;
+			    padding: 0;
+			    margin: 0;
+			    color: #fff;
+		    }
+		    .close{
+		    	float: right;
+			    display: block;
+			    line-height: 15px;
+			    height: 15px;
+			    font-size: 12px;
+			    cursor: pointer;
+			    padding-right: 15px;
+			    margin: 5px;
+			    background: url(../images/dialog_bg_btn.gif) no-repeat right -49px;
+		    }
+	    }
+	    .pdb-content{
+	    	background-color: #fff;
+		    color: #666;
+		    font-size: 12px;
+		    line-height: 150%;
+		    overflow: hidden;
+		    .shopcartInfo{
+		    	position: relative;
+			    padding: 25px 20px 20px 80px;
+			    height: 75px;
+			    overflow: auto;
+			    .cartSuc_icon{
+			    	background: url(../images/ico_success_32.png);
+				    width: 32px;
+				    height: 32px;
+				    display: block;
+				    position: absolute;
+				    left: 30px;
+				    top: 20px;
+			    }
+			    .f14{
+			    	@include shopcarInfo_h2;
+			    	font-size: 14px;
+			    	b{
+			    		font-weight: bold;
+			    	}
+			    }
+			    f12{
+			    	@include shopcarInfo_p;
+			    	@include shopcarInfo_f12;
+			    	    color: #666;
+			    }
+		    }
+	    }
+	    .pdb-bottom{
+	    	height: 25px;
+		    padding: 10px 20px;
+		    background: url(../images/dialog_bg_bottom.gif) repeat-x;
+		    overflow: hidden;
+		    .pdb-bottom-action{
+				    height: 25px;
+				    line-height: 25px;
+				    float: right;
+				    .btn-action{
+						@include btn;
+						border: none;
+						//border:none;
+						em{
+							@include em;
+							background: #F6416C;
+						    border: none;
+						    padding: 0 10px;
+						    height: 25px;
+						    line-height: 25px;
+						    border-radius: 4px;
+						    display: inline-block;
+    font-style: normal;
+    font-size: 12px;
+						}
+				    }
+				    .btn-cancel{
+				    	@include btn;
+				    	border-radius: 4px;
+				    	border: 1px solid #beb7ad;
+				    	em{
+				    		@include em;
+				    		color: #666;
+						    background-position: left -25px;
+						    border: 1px solid #fff;
+				    		background: #F1F1F1;
+    						border-radius: 4px;
+				    	}
+				    }
+				    .pdb-bottom-text{
+				    	height: 25px;
+    					line-height: 25px;
+				    }
+		    }
+	    }
+	}
+	.pdb-bgb{
+		background: url(../images/dialog_bg_line.gif) no-repeat left -20px;
+	    height: 10px;
+	    line-height: 10px;
+	    padding-left: 10px;
+	    opacity: 0.16;
+    overflow: hidden;
+	    span{
+	    	    display: block;
+			    background: url(../images/dialog_bg_line.gif) no-repeat right -30px;
+			    height: 10px;
+			    line-height: 10px;
+	    }
+	}
 }
 		
 	

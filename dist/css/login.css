@@ -1,0 +1,185 @@
+.product_type .products_type_nav {
+  display: none; }
+
+.product_type:hover .products_type_nav {
+  display: block; }
+
+.detail_body {
+  width: 100%;
+  text-align: center; }
+  .detail_body .detail_wrap {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative; }
+
+.AllWrapInside {
+  width: 1098px;
+  margin: 30px auto 50px;
+  /* border: solid 1px #e1e1e1; */ }
+  .AllWrapInside .dengluimg {
+    width: 500px;
+    border-right: solid 1px #e1e1e1;
+    text-align: center;
+    padding: 60px 69px 40px 69px;
+    float: left;
+    display: inline; }
+    .AllWrapInside .dengluimg a {
+      text-decoration: none;
+      color: #666; }
+      .AllWrapInside .dengluimg a img {
+        width: 500px;
+        height: 340px; }
+  .AllWrapInside .denglu_in {
+    width: 350px;
+    padding: 30px 50px 0;
+    float: right;
+    display: inline;
+    font-size: 14px;
+    position: relative; }
+    .AllWrapInside .denglu_in .land {
+      height: 45px;
+      line-height: 45px; }
+      .AllWrapInside .denglu_in .land h2 {
+        font-size: 24px;
+        color: #e73a77;
+        float: left;
+        display: inline;
+        height: 45px;
+        line-height: 28px; }
+      .AllWrapInside .denglu_in .land span {
+        float: right;
+        display: inline;
+        color: #969696;
+        vertical-align: bottom; }
+      .AllWrapInside .denglu_in .land:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden; }
+    .AllWrapInside .denglu_in .land_input1 {
+      position: relative;
+      margin-bottom: 35px;
+      font-size: 14px;
+      color: #ccc; }
+      .AllWrapInside .denglu_in .land_input1 i {
+        width: 40px;
+        height: 40px;
+        background: url(../images/denglubg.png) no-repeat;
+        display: block;
+        position: absolute;
+        left: 5px;
+        top: 0;
+        background-position: 0 -80px; }
+      .AllWrapInside .denglu_in .land_input1 input {
+        width: 300px;
+        height: 20px;
+        line-height: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: solid 1px #ccc;
+        padding-left: 45px;
+        font-family: "microsoft yahei";
+        display: block; }
+    .AllWrapInside .denglu_in .land_input2 {
+      position: relative;
+      margin-bottom: 35px;
+      font-size: 14px;
+      color: #ccc; }
+      .AllWrapInside .denglu_in .land_input2 i {
+        width: 40px;
+        height: 40px;
+        background: url(../images/denglubg.png) no-repeat;
+        display: block;
+        position: absolute;
+        left: 5px;
+        top: 0;
+        background-position: -40px -80px; }
+      .AllWrapInside .denglu_in .land_input2 #password {
+        width: 300px;
+        height: 20px;
+        line-height: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: solid 1px #ccc;
+        padding-left: 45px;
+        font-family: "microsoft yahei";
+        display: block; }
+    .AllWrapInside .denglu_in .forget {
+      overflow: hidden; }
+      .AllWrapInside .denglu_in .forget span {
+        float: left;
+        display: inline;
+        color: #666; }
+      .AllWrapInside .denglu_in .forget a {
+        float: right;
+        display: inline;
+        color: #e73a77; }
+    .AllWrapInside .denglu_in .dl_denglu {
+      margin-top: 15px; }
+      .AllWrapInside .denglu_in .dl_denglu input {
+        width: 347px;
+        height: 43px;
+        color: #fff;
+        font-size: 16px;
+        background: #e73a77;
+        border-radius: 4px;
+        text-align: center;
+        cursor: pointer;
+        font-family: "microsoft yahei"; }
+    .AllWrapInside .denglu_in .dl_nos {
+      padding-top: 15px;
+      padding-left: 0; }
+      .AllWrapInside .denglu_in .dl_nos P {
+        line-height: 30px;
+        text-align: left;
+        color: #666;
+        margin-bottom: 17px;
+        margin-bottom: 6px; }
+      .AllWrapInside .denglu_in .dl_nos .dl_fr {
+        overflow: hidden; }
+        .AllWrapInside .denglu_in .dl_nos .dl_fr a:nth-of-type(1) {
+          background: url(../images/denglubg.png) no-repeat;
+          display: block;
+          width: 40px;
+          height: 40px;
+          float: left;
+          display: inline;
+          margin-right: 20px;
+          overflow: hidden;
+          text-indent: -99em;
+          font-size: 0;
+          background-position: -40px 0; }
+          .AllWrapInside .denglu_in .dl_nos .dl_fr a:nth-of-type(1):hover {
+            background-position: -40px -40px; }
+        .AllWrapInside .denglu_in .dl_nos .dl_fr a:nth-of-type(2) {
+          background: url(../images/denglubg.png) no-repeat;
+          display: block;
+          width: 40px;
+          height: 40px;
+          float: left;
+          display: inline;
+          margin-right: 20px;
+          overflow: hidden;
+          text-indent: -99em;
+          font-size: 0;
+          background-position: 0px -122px; }
+          .AllWrapInside .denglu_in .dl_nos .dl_fr a:nth-of-type(2):hover {
+            background-position: -47px -122px; }
+  .AllWrapInside .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
+.minifooter {
+  width: 980px;
+  margin: 0 auto;
+  text-align: center;
+  border-top: #E1E1E1 1px solid;
+  padding-top: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  background: url(../images/2015-11-10_140503.jpg); }

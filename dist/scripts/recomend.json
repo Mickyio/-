@@ -1,4 +1,4 @@
- [
+{ "recomend_data":[
 	{   "id":"1",
 		"img":"http://image.xzhuang.com/upload//20170918/12000387066a1696fdfbed17af86b628863bcf.jpg",
 		"sale_slogan":"新品上线",
@@ -7,7 +7,9 @@
 		"sale_price":"26.0",
 		"original_price":"33.00",
 		"sale_num":"78",
-		"discount":"7.9折"
+		"discount":"7.9折",
+		"viewnum":"414725",
+		"buy_count":"21936"
 	},
 	{  "id":"2",
 		"img":"http://image.xzhuang.com/upload//20171111/11392489fd413302e703e7711c90ce0eaf9678.jpg",
@@ -17,7 +19,9 @@
 		"sale_price":"9.8",
 		"original_price":"25.00",
 		"sale_num":"44",
-		"discount":"3.9折"
+		"discount":"3.9折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 
 	{	"id":"3",
@@ -28,7 +32,9 @@
 		"sale_price":"19.9",
 		"original_price":"29.00",
 		"sale_num":"56",
-		"discount":"6.9折"
+		"discount":"6.9折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 	{  "id":"4",
 		"img":"http://image.xzhuang.com/upload//20171219/1533383c7cfe74767899a3071e1a3ab7c885ed.jpg",
@@ -38,7 +44,9 @@
 		"sale_price":"39.0",
 		"original_price":"95.00",
 		"sale_num":"5679",
-		"discount":"4.1折"
+		"discount":"4.1折",
+		"viewnum":"1817",
+		"buy_count":"444"
 	},
 	{  "id":"5",
 		"img":"http://image.xzhuang.com/upload//20171013/1815378a8a8d3c6b462f511ac5336baf55b7e2.jpg",
@@ -48,7 +56,9 @@
 		"sale_price":"46.0",
 		"original_price":"97.00",
 		"sale_num":"8",
-		"discount":"4.7折"
+		"discount":"4.7折",
+		"viewnum":"11",
+		"buy_count":"454"
 	},
 	{   "id":"6",
 		"img":"http://image.xzhuang.com/upload//20171111/10553355be489ab389b3add06973f6eb84bd2c.jpg",
@@ -58,7 +68,9 @@
 		"sale_price":"15.0",
 		"original_price":"19.9",
 		"sale_num":"98",
-		"discount":"7.5折"
+		"discount":"7.5折",
+		"viewnum":"11",
+		"buy_count":"25"
 	},
 	{   "id":"7",
 		"img":"http://image.xzhuang.com/upload//20171121/18120493ca797447df9c09afb01aeb5f919dce.jpg",
@@ -68,7 +80,9 @@
 		"sale_price":"85.0",
 		"original_price":"149.00",
 		"sale_num":"465",
-		"discount":"5.7折"
+		"discount":"5.7折",
+		"viewnum":"1",
+		"buy_count":"44"
 	},
 	{  "id":"8",
 		"img":"http://image.xzhuang.com/upload//20170629/1106332ceaf71bfc6a0a8f5372200728eff4de.jpg",
@@ -78,7 +92,9 @@
 		"sale_price":"72.0",
 		"original_price":"110.00",
 		"sale_num":"38",
-		"discount":"6.5折"
+		"discount":"6.5折",
+		"viewnum":"17",
+		"buy_count":"100"
 	},
 
 	{	"id":"9",
@@ -89,7 +105,9 @@
 		"sale_price":"29.0",
 		"original_price":"68.00",
 		"sale_num":"20",
-		"discount":"4.3折"
+		"discount":"4.3折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 	{  "id":"10",
 		"img":"http://image.xzhuang.com/upload//20171111/112630d0649c61f7a10d4d680995aa5f27e7ba.jpg",
@@ -98,7 +116,9 @@
 		"title":"自然堂69.0",
 		"original_price":"88.00",
 		"sale_num":"916",
-		"discount":"7.8折"
+		"discount":"7.8折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 	{  "id":"11",
 		"img":"http://image.xzhuang.com/upload//20171111/104354919122e52669602109944313a5dc92f6.jpg",
@@ -108,7 +128,9 @@
 		"sale_price":"29.0",
 		"original_price":"39.00",
 		"sale_num":"57",
-		"discount":"7.4折"
+		"discount":"7.4折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 	{   "id":"12",
 		"img":"http://image.xzhuang.com/upload//20171111/1046433d0578dcb6f8860fc9cf4d61c32eff19.jpg",
@@ -118,7 +140,9 @@
 		"sale_price":"28.0",
 		"original_price":"128.00",
 		"sale_num":"11",
-		"discount":"2.2折"
+		"discount":"2.2折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 	{   "id":"13",
 		"img":"http://image.xzhuang.com/upload//20171111/105811c1ae83684f6daf2fe5b929b97434a311.jpg",
@@ -128,7 +152,9 @@
 		"sale_price":"49.0",
 		"original_price":"118.00",
 		"sale_num":"6",
-		"discount":"4.2折"
+		"discount":"4.2折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 	{  "id":"14",
 		"img":"http://image.xzhuang.com/upload//20171111/10500852aab50b6bde8edfc1761a3ea72225ef.jpg",
@@ -138,7 +164,9 @@
 		"sale_price":"29.0",
 		"original_price":"78.00",
 		"sale_num":"20079",
-		"discount":"3.8折"
+		"discount":"3.8折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 
 	{	"id":"15",
@@ -149,7 +177,9 @@
 		"sale_price":"7.9",
 		"original_price":"10.00",
 		"sale_num":"7751",
-		"discount":"7.9折"
+		"discount":"7.9折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 	{  "id":"16",
 		"img":"http://image.xzhuang.com/upload//20170918/11491579c8b1b4a82e7578edf2386e7bf4f2c6.jpg",
@@ -159,7 +189,9 @@
 		"sale_price":"199.0",
 		"original_price":"376.00",
 		"sale_num":"696",
-		"discount":"5.3折"
+		"discount":"5.3折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 	{  "id":"17",
 		"img":"http://image.xzhuang.com/upload//20170629/115755ed3ca2f5d65dd2b5b8e07bb962caa1a6.jpg",
@@ -169,7 +201,9 @@
 		"sale_price":"99.0",
 		"original_price":"230.00",
 		"sale_num":"10",
-		"discount":"4.3折"
+		"discount":"4.3折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 	{   "id":"18",
 		"img":"http://image.xzhuang.com/upload//20170629/120347a641631d423abc9a7c7ce50862634020.jpg",
@@ -179,7 +213,9 @@
 		"sale_price":"30.0",
 		"original_price":"49.00",
 		"sale_num":"338",
-		"discount":"6.1折"
+		"discount":"6.1折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 	{   "id":"19",
 		"img":"http://image.xzhuang.com/upload//20170629/12102453dd2d0d38302f04aeed012ebbf9776c.jpg",
@@ -189,7 +225,9 @@
 		"sale_price":"230.0",
 		"original_price":"",
 		"sale_num":"25566",
-		"discount":""
+		"discount":"",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 	{  "id":"20",
 		"img":"http://image.xzhuang.com/upload//20171213/1612313e74a79b56464ceb1b5756c62d3e9c03.jpg",
@@ -199,7 +237,9 @@
 		"sale_price":"33.0",
 		"original_price":"55.00",
 		"sale_num":"13",
-		"discount":"6折"
+		"discount":"6折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 
 	{	"id":"21",
@@ -210,7 +250,9 @@
 		"sale_price":"82.0",
 		"original_price":"180.00",
 		"sale_num":"10",
-		"discount":"4.6折"
+		"discount":"4.6折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 	{  "id":"22",
 		"img":"http://image.xzhuang.com/upload//20170918/12000387066a1696fdfbed17af86b628863bcf.jpg",
@@ -220,7 +262,9 @@
 		"sale_price":"59.0",
 		"original_price":"69.00",
 		"sale_num":"2224",
-		"discount":"8.6折"
+		"discount":"8.6折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 	{  "id":"23",
 		"img":"http://image.xzhuang.com/upload//20171013/1605063976912ee922b37e7597ce1b331cd042.jpg",
@@ -230,7 +274,9 @@
 		"sale_price":"9.0",
 		"original_price":"19.00",
 		"sale_num":"29",
-		"discount":"4.7折"
+		"discount":"4.7折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 	{   "id":"24",
 		"img":"http://image.xzhuang.com/upload//20171111/1128459cd20d38ffb37e069c73099e3282e63e.jpg",
@@ -240,7 +286,9 @@
 		"sale_price":"64.0",
 		"original_price":"79.00",
 		"sale_num":"12",
-		"discount":"8.1折"
+		"discount":"8.1折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 	{   "id":"25",
 		"img":"http://image.xzhuang.com/upload//20171111/110315307eb913133ed38802fda45ab8223ab2.jpg",
@@ -250,7 +298,9 @@
 		"sale_price":"16.0",
 		"original_price":"74.00",
 		"sale_num":"62",
-		"discount":"2.2折"
+		"discount":"2.2折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 	{   "id":"26",
 		"img":"http://image.xzhuang.com/upload//20171129/170505e2984d39df2845467a501b51ca50fdd6.jpg",
@@ -260,7 +310,9 @@
 		"sale_price":"23.0",
 		"original_price":"35.90",
 		"sale_num":"17",
-		"discount":"6.4折"
+		"discount":"6.4折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 	{   "id":"27",
 		"img":"http://image.xzhuang.com/upload//20160930/15514858818314ecd340c94ee12c482b671cb7.jpg",
@@ -270,7 +322,9 @@
 		"sale_price":"15.5",
 		"original_price":"42.00",
 		"sale_num":"8164",
-		"discount":"3.7折"
+		"discount":"3.7折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 	{   "id":"28",
 		"img":"http://image.xzhuang.com/upload//20171111/113130921196d3e73230204edae0cdeaf45111.jpg",
@@ -280,7 +334,9 @@
 		"sale_price":"39.0",
 		"original_price":"99.00",
 		"sale_num":"2",
-		"discount":"3.9折"
+		"discount":"3.9折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 	{   "id":"29",
 		"img":"http://image.xzhuang.com/upload//20160930/1551091e235a116fdfc3e6955a9142ed30dc71.jpg",
@@ -290,7 +346,9 @@
 		"sale_price":"199.0",
 		"original_price":"376.00",
 		"sale_num":"696",
-		"discount":"5.3折"
+		"discount":"5.3折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	},
 	{   "id":"30",
 		"img":"http://image.xzhuang.com/upload//20170629/10295881a2555c6e5b9205aad7da82339fec4d.jpg",
@@ -300,6 +358,48 @@
 		"sale_price":"65.0",
 		"original_price":"69.00",
 		"sale_num":"182",
-		"discount":"9.4折"
+		"discount":"9.4折",
+		"viewnum":"1817",
+		"buy_count":"44"
 	}
-]
+],
+"index_data":[
+		{   "id":"31",
+		"img":"http://image.xzhuang.com/upload//20180116/145649f8fb184d2c1e82d3fe5d10d23a890c41.jpg",
+		"title":"曼秀雷敦天然植物润唇膏－香橙4g",
+		"sale_price":"23.0",
+		"original_price":"36"
+	},
+	{   "id":"32",
+		"img":"http://image.xzhuang.com/upload//20180116/145704184aebf1482514acae3f02f149e749a6.jpg",
+		"title":"番茄派 山羊奶护手霜 80g（5支装）",
+		"sale_price":"16.0",
+		"original_price":" 29"
+	},
+
+	{	"id":"33",
+		"img":"http://image.xzhuang.com/upload//20180116/14572006ae4b265eac8352ce3d7bea03f93ad6.jpg",
+		"title":"菲诗小铺恒采保湿隔离霜韩国紫色绿色遮瑕妆前乳（绿色）",
+		"sale_price":"23.0",
+		"original_price":"36"
+	},
+	{  "id":"34",
+		"img":"http://image.xzhuang.com/upload//20180116/145740b1905f0206e39a3d1eea236a479a8d7c.jpg",
+		"title":"thesaem得鲜舒缓卸妆水300ml",
+		"sale_price":"39.0",
+		"original_price":"68"
+	},
+	{   "id":"35",
+		"img":"http://image.xzhuang.com/upload//20180116/14575777c6b3620e8c8c2ea8408af7cd0ebcc3.jpg",
+		"title":"ALOBON雅邦花漾无暇气垫BB水凝霜组合装1+1粉芯 3#淡紫色 15gx2",
+		"sale_price":"35.0",
+		"original_price":"118"
+	},
+	{   "id":"36",
+		"img":"http://image.xzhuang.com/upload//20180116/14581244f0c5a693877acccef505434695ca33.jpg",
+		"title":"伊丽莎白雅顿（绿茶）香水30ml",
+		"sale_price":"82.0",
+		"original_price":"180"
+	}
+
+]}

@@ -626,7 +626,9 @@ body, html {
               height: 290px; }
               .content .content_wrap .content_left .content_list li .sale_img a img {
                 height: 245px;
-                display: block; }
+                display: block;
+                width: 100%;
+                height: 100%; }
             .content .content_wrap .content_left .content_list li .sale_img .time {
               position: static;
               margin-top: 5px; }
@@ -1032,6 +1034,30 @@ body, html {
       display: none;
       padding-top: 5px; }
 
+.newHome_toolBar {
+  width: 65px;
+  height: 280px;
+  height: 140px;
+  background: #fff;
+  background: url(../images/toolbar.png);
+  position: fixed;
+  right: 15px;
+  top: 50%;
+  margin-top: -140px;
+  z-index: 9;
+  display: none; }
+  .newHome_toolBar li a {
+    display: block;
+    width: 65px;
+    height: 66px;
+    margin-bottom: 5px;
+    color: #fff;
+    text-align: center;
+    line-height: 3;
+    text-indent: 3px; }
+  .newHome_toolBar li .newHome-toolBar-gototop {
+    background: url(../images/toolbar.png) no-repeat 0px -142px; }
+
 .footer {
   position: relative;
   background: #f7f7f7;
@@ -1281,3 +1307,162 @@ body, html {
     background: #f7f7f7;
     text-align: center;
     padding-bottom: 20px; }
+
+.util-dialog {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  width: 420px;
+  z-index: 9999;
+  font-size: 12px; }
+  .util-dialog .pdb-bgt {
+    background: url(../images/dialog_bg_line.gif) no-repeat;
+    height: 10px;
+    line-height: 10px;
+    padding-left: 10px;
+    opacity: 0.16;
+    overflow: hidden; }
+    .util-dialog .pdb-bgt span {
+      display: block;
+      background: url(../images/dialog_bg_line.gif) no-repeat right -10px;
+      height: 10px;
+      line-height: 10px; }
+  .util-dialog .pdb-bgm {
+    background-color: #000;
+    height: 300px;
+    opacity: 0.16;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0; }
+  .util-dialog .pdb-main {
+    position: absolute;
+    height: 300px;
+    top: 9px;
+    left: 9px;
+    width: 400px;
+    z-index: 9999;
+    border: solid 1px #beb7ad;
+    background-color: #fff;
+    overflow: hidden; }
+    .util-dialog .pdb-main .pdb-title {
+      background-color: #BB282B;
+      color: #fff;
+      height: 25px;
+      overflow: hidden; }
+      .util-dialog .pdb-main .pdb-title h4 {
+        float: left;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 25px;
+        height: 25px;
+        text-indent: 10px;
+        padding: 0;
+        margin: 0;
+        color: #fff; }
+      .util-dialog .pdb-main .pdb-title .close {
+        float: right;
+        display: block;
+        line-height: 15px;
+        height: 15px;
+        font-size: 12px;
+        cursor: pointer;
+        padding-right: 15px;
+        margin: 5px;
+        background: url(../images/dialog_bg_btn.gif) no-repeat right -49px; }
+    .util-dialog .pdb-main .pdb-content {
+      background-color: #fff;
+      color: #666;
+      font-size: 12px;
+      line-height: 150%;
+      overflow: hidden; }
+      .util-dialog .pdb-main .pdb-content .shopcartInfo {
+        position: relative;
+        padding: 25px 20px 20px 80px;
+        height: 75px;
+        overflow: auto; }
+        .util-dialog .pdb-main .pdb-content .shopcartInfo .cartSuc_icon {
+          background: url(../images/ico_success_32.png);
+          width: 32px;
+          height: 32px;
+          display: block;
+          position: absolute;
+          left: 30px;
+          top: 20px; }
+        .util-dialog .pdb-main .pdb-content .shopcartInfo .f14 {
+          font-family: Tahoma,Arial,Verdana,Simsun;
+          margin-bottom: 8px;
+          color: #666;
+          font-size: 14px; }
+          .util-dialog .pdb-main .pdb-content .shopcartInfo .f14 b {
+            font-weight: bold; }
+        .util-dialog .pdb-main .pdb-content .shopcartInfo f12 {
+          font-family: Tahoma,Arial,Verdana,Simsun;
+          line-height: 20px;
+          font-size: 12px;
+          color: #666; }
+    .util-dialog .pdb-main .pdb-bottom {
+      height: 25px;
+      padding: 10px 20px;
+      background: url(../images/dialog_bg_bottom.gif) repeat-x;
+      overflow: hidden; }
+      .util-dialog .pdb-main .pdb-bottom .pdb-bottom-action {
+        height: 25px;
+        line-height: 25px;
+        float: right; }
+        .util-dialog .pdb-main .pdb-bottom .pdb-bottom-action .btn-action {
+          display: inline-block;
+          margin-right: 5px;
+          padding: 0;
+          height: 23px;
+          line-height: 23px;
+          text-decoration: none;
+          border: none; }
+          .util-dialog .pdb-main .pdb-bottom .pdb-bottom-action .btn-action em {
+            color: #fff;
+            font-weight: bold;
+            background-position: left 0;
+            border: 1px solid #ffb74c;
+            background: #F6416C;
+            border: none;
+            padding: 0 10px;
+            height: 25px;
+            line-height: 25px;
+            border-radius: 4px;
+            display: inline-block;
+            font-style: normal;
+            font-size: 12px; }
+        .util-dialog .pdb-main .pdb-bottom .pdb-bottom-action .btn-cancel {
+          display: inline-block;
+          margin-right: 5px;
+          padding: 0;
+          height: 23px;
+          line-height: 23px;
+          text-decoration: none;
+          border-radius: 4px;
+          border: 1px solid #beb7ad; }
+          .util-dialog .pdb-main .pdb-bottom .pdb-bottom-action .btn-cancel em {
+            color: #fff;
+            font-weight: bold;
+            background-position: left 0;
+            border: 1px solid #ffb74c;
+            color: #666;
+            background-position: left -25px;
+            border: 1px solid #fff;
+            background: #F1F1F1;
+            border-radius: 4px; }
+        .util-dialog .pdb-main .pdb-bottom .pdb-bottom-action .pdb-bottom-text {
+          height: 25px;
+          line-height: 25px; }
+  .util-dialog .pdb-bgb {
+    background: url(../images/dialog_bg_line.gif) no-repeat left -20px;
+    height: 10px;
+    line-height: 10px;
+    padding-left: 10px;
+    opacity: 0.16;
+    overflow: hidden; }
+    .util-dialog .pdb-bgb span {
+      display: block;
+      background: url(../images/dialog_bg_line.gif) no-repeat right -30px;
+      height: 10px;
+      line-height: 10px; }

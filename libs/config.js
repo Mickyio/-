@@ -11,6 +11,9 @@ requirejs.config({
 		"getBrand":"scripts/getBrand",
 		"getRecomend":"scripts/getRecomend",
 		"count_down":"scripts/count_down",
-		"Register":"scripts/register"
+		"Register":"scripts/register",
+		"Load":"scripts/detail",
+		"Login":"scripts/login",
+		"move":"scripts/base"
 	}
 })

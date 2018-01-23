@@ -15,6 +15,7 @@ gulp.task("watch",()=>{
 	gulp.watch(["scss/*.scss"],["sass"]);
 	gulp.watch(["images/**",],["image"]);
 	gulp.watch(["data/*.json",],["json"]);
+	gulp.watch(["data/*.txt",],["txt"]);
 
 
 })
@@ -48,6 +49,16 @@ gulp.task("json",()=>{
 				// .src(["html/**/*"])所有
 				// .src(["html/**/*","html/**/*.html"])实现平铺
 				.src(["data/*.json"])
+				.pipe(gulp.dest("dist/scripts"))//建立dist文件
+				//.pipe(connect.reload());//自动刷新
+})
+gulp.task("txt",()=>{
+	return gulp
+				// .src(["html/index.html",])使用正则
+				// .src(["html/*"])
+				// .src(["html/**/*"])所有
+				// .src(["html/**/*","html/**/*.html"])实现平铺
+				.src(["data/*.txt"])
 				.pipe(gulp.dest("dist/scripts"))//建立dist文件
 				//.pipe(connect.reload());//自动刷新
 })
