@@ -6,6 +6,7 @@
 	<style type="text/css" href="css/detail.css"></style>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/detail.css">
+	
 </head>
 <body>
 	<!-- 头部开始 -->
@@ -703,7 +704,7 @@
         	</div>
          </div>
         <!--<input input-name="goods" class="buy_bt addGoodsToCart" id="goods_yh_btn" data-product-id="60381" jump="true" type="button">-->
-          <a href="#" class="buy_bt addGoodsToCart" id="goods_yh_btn" data-product-id="60381">加入购物车</a>
+          <a class="buy_bt addGoodsToCart" id="goods_yh_btn">加入购物车</a>
           <input type="hidden" id="item_id" name="item_id" value="60381" />
 	      <input type="hidden" id="max_num" value="101" />
 	      <input type="hidden" id="static_url" value="http://image.xzhuang.com/static" />
@@ -1123,6 +1124,53 @@
 
 <!--右边浮动菜单end-->
 </div>
+
+
+<!-- 弹出框 -->
+	<div class="util-dialog" style="width: 420px;left: 501.5px;top: 1088.5px;">
+		<div class="pdb-bgt">
+			<span></span>
+		</div>
+		<div class="pdb-bgm" style="height: 190px;"></div>
+		<div class="pdb-main" style="border-color: rgb(153,153,153);width: 400px;height: 190px;">
+			<div class="pdb-title" style="background-color: rgb(246,65,108);">
+				<h4>购物车</h4>
+				<span class="close">关闭</span>
+			</div>
+			<div class="pdb-content" style="height: 120px;">
+				<div class="pdb-contentframe">
+					<div class="shopcartInfo">
+						<i class="cartSuc_icon"></i>
+						<h2 class="f14">
+							<b>加入成功</b>
+						</h2>
+						<p class="f12">名称：番茄派 山羊奶护手霜 80g（5支装）</p>
+						<p class="f12">
+							价格：￥
+							<b>16</b>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="pdb-bottom">
+				<p class="pdb-bottom-action">
+					<a class="btn btn-action">
+						<em>去购物车结算</em>
+					</a>
+					<a class="btn btn-cancel">
+						<em>继续购物</em>
+					</a>
+				</p>
+				<p class="pdb-bottom-text"></p>
+				
+			</div>
+		</div>
+		<div class="pdb-bgb">
+			<span></span>
+		</div>
+	</div>
+	<!-- 遮罩层 -->
+	<div class="util-overlayer" style="z-index: 9000;width: 1423px;height: 5974px;position: absolute;top: 0px;left: 0px;right: 0;bottom: 0;background: rgb(0,0,0);opacity: 0.5"></div>
 
 
 

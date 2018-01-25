@@ -10,6 +10,7 @@ define(['jquery','cookie'],function(){
 			this.btn=$(".dl_denglu");
 			console.log(this.btn);
 			this.btn.on("click",$.proxy(this.checkUser,this));
+			this.error=$("#login_error");
 		},
 		checkUser:function(e){
 			var e=event||window.event;
@@ -21,10 +22,14 @@ define(['jquery','cookie'],function(){
 			console.log(scookie);
 			if(username==scookie.id && pass==scookie.pass){
 				flag=true;
-				console.log("登录成功")
+				console.log("登录成功");
+				self.location.href="http://localhost:82/index.html";
 			}else{
 				flag=false;
-				console.log("登录失败")
+				console.log("登录失败");
+				this.error.css({
+					display:"block"
+				})
 				//登录成功
 			}
 			if(flag=false){

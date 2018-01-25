@@ -1,7 +1,7 @@
 /*主页业务逻辑页面*/	
 //requirejs === require
 require(["scripts/config.js"],function(){ //先去配置;
-	require(["jquery","supperbanner","getData","getBrand","getRecomend","count_down","Register","Load","Login","move"/*,"pop","shopping","loadLi"*/],function($,sup,getData,getBrand,getRecomend,count_down,Register,Load,Login,move/*,pop,shop,loadli*/){//再去使用简写的路径;
+	require(["jquery","supperbanner","getData","getBrand","getRecomend","count_down","Register","Load","Login","move","Pop","shopcar"/*,"pop","shopping","loadLi"*/],function($,sup,getData,getBrand,getRecomend,count_down,Register,Load,Login,move,Pop,shopcar/*,pop,shop,loadli*/){//再去使用简写的路径;
 		//console.log($);
 		// $(".container").css({
 		// 	background : '#ddd'
@@ -24,7 +24,7 @@ require(["scripts/config.js"],function(){ //先去配置;
 
 		getBrand.init();
 
-		getRecomend.init();
+		 getRecomend;
 
 		count_down;
 
@@ -33,7 +33,25 @@ require(["scripts/config.js"],function(){ //先去配置;
 		Load;
 		Login;
 		move;
+		/*$(".buy_btn").on("click",function(){
+			Pop.init();
+		});*/
+		$(".buy_btn").on("click",function(){
+			Pop.init($(".buy_btn"));
+		});
+
+		setTimeout(function() {
+			$(".sale_buy").on("click",function(){
+				Pop.init($(".sale_buy"));
+			});
+		}, 500);
 		
+
+		$("#goods_yh_btn").on("click",function(){
+			Pop.init($("#goods_yh_btn"));
+		});
+		shopcar.init();
+		shopcar.getCart();
 		
 
 		/*登陆框*/

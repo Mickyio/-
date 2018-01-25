@@ -17,47 +17,44 @@ define(['jquery','cookie'],function(){
 			$.ajax(setup).then($.proxy(this.rendring,this));
 			this.usercenter=$(".user_center");
 			this.user_center_unflod=$(".user_center_unflod");
-			$(this.usercenter).on("mouseover",$.proxy(this.showhide,this,"block"));
+			$(this.usercenter).on("mouseenter",$.proxy(this.showhide,this,"block"));
 			$(this.usercenter).on("mouseleave",$.proxy(this.showhide,this,"none"));
 
 		},
-		showhide:function($status){
-			/*if($status ="none"){*/
-				this.user_center_unflod.css("display",$status);
-			/*}else{
-				this.user_center_unflod.css("display","block")
-			}*/
+		showhide:function(status){
+			console.log(status)
+			if(status == "block"){
+				this.user_center_unflod.css("display","block");
+				$("serv2").css({
+					
+				})
+			}else{
+				this.user_center_unflod.css("display","none");
+				
+			}
 		},
 		rendring:function(res){
-			//console.log(res);
-			//var _this=this;
+
 			var main="" ;
 			res.recomend_data.forEach(function(item){
-				/*$(_this.hot_img[index]).attr("src",item.img);
-				$(_this.sale_slogan[index]).html(item.sale_slogan);
-				$(_this.hot_product_brand[index]).html(item.brand)
-				$(_this.hot_product_title[index]).html(item.title);
-				$(_this.priced[index]).html(item.original_price);
-				$(_this.price[index]).html(item.sale_price);
-				$(_this.sale_num[index]).html(item.sale_num);
-				$(_this.discount[index]).html(item.discount);*/
+				
 				main +='<li>'+
 						'<div class="hot_img">'+
-							'<a>'+
+							'<a class=pro_list_img>'+
 								'<img src="'+item.img+'"  id='+item.id+'>'+
 							'</a>'+
 							'<div class="sale_pink">'+item.sale_slogan+'</div>'+
-							'<h2 class="">'+
+							'<h2 class="sale_brand">'+
 								'<a>'+item.brand+'</a>'+
 							'</h2>'+
-							'<p>'+item.title+'</p>'+
+							'<p class="pro_title">'+item.title+'</p>'+
 							'<div class="sale_price">'+
 								'<span class="sale_num">'+
 									'<strong>'+item.sale_num+'</strong>'+
 									'人已购买'+
 									
 								'</span>'+
-								'<span class="priced">'+
+								'<span class="priced sale_price">'+
 									'<dfn>¥</dfn>'+
 									item.original_price+
 								'</span>'+
@@ -67,7 +64,7 @@ define(['jquery','cookie'],function(){
 								'</del>'+
 								'<span class="discount">'+item.discount+'</span>'+
 							'</div>'+
-							'<a class="sale_buy" data='+item.id+'>'+
+							'<a class="sale_buy" data-id='+item.id+' img='+item.img+' title='+item.title+' price='+item.sale_price+' id='+item.id+'>'+
 								'立即抢购'+
 							'</a>'+
 						'</div>'+
@@ -94,21 +91,30 @@ define(['jquery','cookie'],function(){
 		},
 		getInfo:function(e){
 			var e=e||window.event;
-			self.location.href="http://localhost:82/detail.html";
+			//获取商品所有信息
+			
+			
 			this.index=e.target.index;
+			
 			//console.log(this.hot_li_img[this.index])
 			this.id=$(this.hot_li_img[this.index]).attr("id");
 			// let timer = setTimeout(function(){
 				//console.log(this.id);
-				this.setcookie();
+				this.brand=$(".sale_brand").eq(this.index).find("a").text();
+				this.img=$(".hot_img").eq(this.index).find("img").attr("src");
+				//this.sale_slogan=$(".sale_pink").eq(this.index).text();
+				this.title=$(".hot_img").eq(this.index).find("p").text();
+				this.sale_num=$(".sale_num").eq(this.index).find("strong").text();
+				this.sale_price=$(".price").eq(this.index).text();
+				this.discount=$(".discount").eq(this.index).text();
+				this.original_price=$(".priced").eq(this.index).text();
+				//console.log(this.brand,this.img,this.title,this.sale_num);
+				$.cookie("shopping_cart",'{"id":"'+this.id+ '","discount":"'+this.discount+ '","original_price":"'+this.original_price+ '","sale_price":"'+this.sale_price+ '","title":"'+this.title+'","brand":"'+this.brand+'","img":"'+this.img+'","sale_num":"'+this.sale_num+'"}')
+				self.location.href="http://localhost:82/detail.html";
 			
-
-		},
-		setcookie:function(){
-			$.cookie("id",this.id);
 
 		}
 
 	}
-	return new getRecomend();
+	return  new getRecomend();
 })

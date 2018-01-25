@@ -1,0 +1,162 @@
+@charset "UTF-8";
+.product_type .products_type_nav {
+  display: none; }
+
+.product_type:hover .products_type_nav {
+  display: block; }
+
+.detail_body {
+  width: 100%;
+  text-align: center; }
+  .detail_body .detail_wrap {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative; }
+
+.content {
+  margin: 0px auto;
+  width: 1100px;
+  font-family: "Microsoft Yahei"; }
+  .content .cart_index {
+    width: 1100px;
+    height: auto;
+    font-family: 宋体;
+    font-size: 12px;
+    color: #333333;
+    position: relative;
+    clear: both;
+    margin: 20px auto; }
+    .content .cart_index .cart_tishi {
+      width: 1098px;
+      height: 26px;
+      line-height: 26px;
+      margin-top: 10px;
+      text-indent: 1em;
+      background: none repeat scroll 0% 0% #f9f9f9;
+      border: 1px solid #FABF7B;
+      padding: 10px 0;
+      position: relative;
+      color: #FA8801;
+      text-align: center;
+      font-size: 14px;
+      background: #FFFDF0; }
+      .content .cart_index .cart_tishi .cart_close {
+        width: 12px;
+        height: 12px;
+        cursor: pointer;
+        display: inline-block;
+        background: url(../images/scoreCartIcon.png) repeat scroll -11px -108px transparent;
+        position: absolute;
+        top: 17px;
+        right: 20px; }
+    .content .cart_index .cart_list_tab {
+      width: 1100px;
+      margin: 10px auto;
+      font-size: 14px; }
+      .content .cart_index .cart_list_tab table {
+        width: 1100px;
+        border: 1px solid #dddddd;
+        text-align: center; }
+        .content .cart_index .cart_list_tab table .cartltab_title {
+          height: 40px;
+          line-height: 40px;
+          background: #fff; }
+          .content .cart_index .cart_list_tab table .cartltab_title td {
+            font-weight: bold;
+            color: #333333;
+            border-bottom: 1px solid #dddddd; }
+        .content .cart_index .cart_list_tab table .cartltabtr {
+          height: 93px;
+          background: none repeat scroll 0% 0% white; }
+          .content .cart_index .cart_list_tab table .cartltabtr td {
+            border-bottom: 1px solid #dddddd;
+            vertical-align: middle; }
+            .content .cart_index .cart_list_tab table .cartltabtr td .cartltab_pro {
+              border: 1px solid #dddddd;
+              margin: auto 10px auto 10px;
+              width: 50px;
+              height: 50px;
+              display: inline-block;
+              vertical-align: middle; }
+            .content .cart_index .cart_list_tab table .cartltabtr td .cartltab_proname {
+              width: 250px;
+              height: 30px;
+              line-height: 30px;
+              overflow: hidden;
+              display: inline-block;
+              vertical-align: middle; }
+            .content .cart_index .cart_list_tab table .cartltabtr td .cartltab_num1 {
+              width: 20px;
+              height: 20px;
+              line-height: 20px;
+              display: inline-block;
+              float: left;
+              border: 1px solid #dddddd;
+              margin: 0px 0px 0 27px;
+              vertical-align: middle;
+              cursor: pointer; }
+            .content .cart_index .cart_list_tab table .cartltabtr td .cartltab_num {
+              width: 30px;
+              height: 20px;
+              line-height: 20px;
+              text-align: center;
+              display: inline-block;
+              float: left;
+              border: 1px solid #dddddd;
+              border-left: 0px;
+              border-right: 0px; }
+            .content .cart_index .cart_list_tab table .cartltabtr td .cartltab_num2 {
+              width: 20px;
+              height: 20px;
+              line-height: 20px;
+              display: inline-block;
+              float: left;
+              border: 1px solid #dddddd;
+              vertical-align: middle;
+              cursor: pointer; }
+            .content .cart_index .cart_list_tab table .cartltabtr td .deleteGoodsFromCart {
+              width: 17px;
+              height: 19px;
+              display: block;
+              background-image: url(../images/scoreCartIcon.png);
+              background-repeat: no-repeat;
+              background-position: -9px -4px;
+              text-indent: -9999px;
+              margin: 20px auto 0 auto; }
+        .content .cart_index .cart_list_tab table .cartltab_count {
+          height: 55px;
+          line-height: 55px;
+          background: #fff; }
+          .content .cart_index .cart_list_tab table .cartltab_count .cart_tub2 {
+            background: url(../images/cartimg01.jpg) no-repeat scroll 0% 0% transparent;
+            float: left;
+            display: inline-block;
+            width: 11px;
+            height: 12px;
+            background-position: -15px 0px;
+            margin: 21px 10px auto 30px; }
+          .content .cart_index .cart_list_tab table .cartltab_count a {
+            float: left; }
+          .content .cart_index .cart_list_tab table .cartltab_count ul {
+            float: right;
+            margin-right: 20px; }
+            .content .cart_index .cart_list_tab table .cartltab_count ul li {
+              margin-right: 20px;
+              float: left;
+              vertical-align: middle; }
+            .content .cart_index .cart_list_tab table .cartltab_count ul .cart_prices {
+              color: #f7286b;
+              font-weight: bold;
+              font-size: 24px;
+              font-family: 微软雅黑; }
+    .content .cart_index .cart_youhui {
+      width: 1098px;
+      margin: 20px 0px;
+      background: #FFF3E1;
+      border: 1px dotted #EF7E2D;
+      position: relative; }
+    .content .cart_index .cart_js {
+      clear: both;
+      float: right;
+      height: 40px; }

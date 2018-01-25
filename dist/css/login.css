@@ -106,6 +106,15 @@
         padding-left: 45px;
         font-family: "microsoft yahei";
         display: block; }
+    .AllWrapInside .denglu_in #login_error {
+      position: absolute;
+      left: 50px;
+      top: 197px;
+      border: none;
+      padding: 0 10px;
+      width: 332px;
+      line-height: 33px;
+      display: none; }
     .AllWrapInside .denglu_in .forget {
       overflow: hidden; }
       .AllWrapInside .denglu_in .forget span {

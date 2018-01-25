@@ -5,7 +5,7 @@
 	<title>Document</title>
 	<style type="text/css" href="css/detail.css"></style>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/settlement.css">
 </head>
 <body>
 	<!-- 头部开始 -->
@@ -31,7 +31,7 @@
 				</div>
 				<div class="user_center_unflod">
 					<div class="serv2"></div>
-					
+					<span class="my_xz">我的校妆</span>
 					<a href="">我的优惠券</a>
 					<a href="">我的积分</a>
 					<a href="">我的储值</a>
@@ -619,47 +619,163 @@
 		</div>
 	</div>
 	<!-- body开始 -->
-	<!---登陆 begin-->
-	<div class="AllWrapInside">
+	<!--- begin-->
+	<div class="w m2">
+		<div class="checkout">
+			<div class="wizard">
+				<form id="J_form" method="post">
+      <div id="step-4" class="step step-complete">
+        <div class="step-title"><a href="http://www.xzhuang.com/bts/carts" id="cartRetureUrl" class="return-edit">←&nbsp;返回修改购物车</a><strong>商品清单</strong></div>
+        <div class="step-content">
+          <div id="part-order" class="sbox-wrap">
+            <div class="sbox">
+              <div id="order-cart">
+                <div class="order-review"> 
+                  <!--商品清单展示--> 
+                  <span id="span-skulist">
+                  <table class="review-thead">
+                    <tbody>
+                      <tr>
+                        <td class="fore1">商品名称</td>
+                        <td class="fore3">是否自提</td>
+                        <td class="fore2">校妆价</td>
+                        <td class="fore2">兑换积分</td>
+                        <td class="fore4">数量</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!--**********商品清单内容列表开始************-->
+                  <div class="review-body"> 
+                                        <div class="review-tbody">
+                      <table class="order-table">
+                        <tbody>
+                          <tr>
+                            <td class="fore1"><div class="p-goods">
+                                <div class="p-img"><a href="http://www.xzhuang.com/?product-60389.html" target="_blank"><img alt="" src="http://image.xzhuang.com/upload///20171124/133554184aebf1482514acae3f02f149e749a6.jpg" width="50" height="50"></a></div>
+                                <div class="p-detail">
+                                  <div class="p-name"> <a href="http://www.xzhuang.com/?product-60389.html" target="_blank"> 番茄派 山羊奶护手霜 80g（5支装） </a> </div>
+                                  <div class="p-more"  id="bh_60389">商品货号：60064 
+                                    <!-- icon图标预留--> 
+                                    <span id="promise_710308" class="promise411"> </span> </div>
+                                </div>
+                              </div>
+                              </td>
+                            <td class="fore3"></td>
+                            <td class="p-price"><strong>￥16.00</strong></td>
+                            <td class="fore2">0</td>
+                            <td class="fore2">x 1</td>
+                          </tr>
+                          
+                          <!-- 延保显示 -->
+                        </tbody>
+                      </table>
+                    </div>
+                                        <!---单品结束--> 
+                                        
+                                        <div class="review-block review-sale" id="coupon_gifts" style="display:none">
+                      <div class="block-header">
+                        <table class="order-table">
+                          <tbody>
+                            <tr>
+                              <td class="fore1"><b></b> <strong> 优惠劵赠品： </strong></td>
+                              <td class="p-price"></td>
+                              <td class="fore2">&nbsp;</td>
+                              <td class="fore2">&nbsp;</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="review-tbody">
+                      <table class="order-table">
+                        <tbody></tbody>
+                      </table>
+                      </div>
+                    </div>
+                                                            <div class="review-block review-sale">
+                      <div class="block-header">
+                        <table class="order-table addPrice">
+                          <tbody>
+                            <tr>
+                              <td class="fore1"><strong> <p style=" border:1px solid #ff9933; border-bottom:0px; padding:0 2px; margin-top:20px; background:#ffcc33; width:210px; color:#fff;text-align:center">　加0.10元换购以下商品：<input type="checkbox"  class="exchange_input" name="e_1736" value="1" v="0.10" /></p>  </strong></td>
+                              <td class="p-price"></td>
+                              <td class="fore2">&nbsp;</td>
+                              <td class="fore2">&nbsp;</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                                            <div class="review-tbody">
+                      	<table class="order-table">
+                          <tbody>
+                           <tr>
+                              <td class="fore1"><div class="p-goods">
 
-	    <form action="http://www.xzhuang.com/cas/sign/in?" method="post" id="form_signin" autocomplete="off" class="loginform">
-	        <input name="isfastbuy" value="" type="hidden">
-	        <div class="denglu_in" id="formlogin">
-	            <div class="land">
-	                <h2>登录校妆网</h2><span>还没校妆网账号，请<a href="http://localhost:82/register.html">免费注册</a></span>
-	            </div>
-	            <div class="land_input1">
-	                <i class="i1"></i>
-	                <input type="text" class="x-input inputstyle input_name" id="username" name="username" value="" placeholder="请输入用户名或会员卡号" maxlength="18" tabindex="1" />
-	                            </div>
-	            <div class="land_input2">
-	                <i class="i2"></i>
-	                <input type="password" class="x-input inputstyle input_pwd" id="password" name="password" placeholder="请输入密码" maxlength="20" tabindex="2" />
-	                            </div>
-	                            <div id="login_error" class="error">用户名或密码不正确</div>
-	                                    <div class="forget">
-	                <span><input type="checkbox" class="checkbox" />记住用户名</span>
-	                <a class="link"  href="/cas/forgotPassword">忘记密码？</a>
-	            </div>
-	            <div class="dl_denglu">
-	                <input value="登录" tabindex="4" type="button">
-	            </div>
-	            <div class="dl_no dl_nos">
-	                <p>无需注册，即可登录</p>
-	                <div class="dl_fr">
-	                    <a href="/cas/third/oauth2/domain/qq?continue=" class="dl_fr2" title="使用QQ账号直接登陆">QQ</a>
-	                    <a href="/cas/index/wxLogin" class="dl_fr4" title="使用微信直接登陆">微信</a>
-	                </div>
-	            </div>
-	        </div>
-	        
-	        <div class="dengluimg"><a href="http://www.xzhuang.com/index/advcount?adv=50" target="_blank"><img src="http://image.xzhuang.com/upload/20171113/17373123a2bcbcc58ff2101861d95eb40c467a.jpg"/></a></div>
+                                  <div class="p-img"><a href="http://www.xzhuang.com/?product-.html" target="_blank"><img src="http://image.xzhuang.com/upload//20171213/1342148cc48d1e9cdc9c59c15d65d1d6eab089.jpg" width="50" height="50"></a></div>
+                                  <div class="p-detail">
+                                    <div class="p-name"> <a href="http://www.xzhuang.com//?product-.html" target="_blank"> 【换购】美迪惠尔A.P.L去角质黑头面膜(红色)15ml*2（有效期至2018/2/24）</a> </div>
+                                    <div class="p-more">商品编号：60863  
+                                      <!-- icon图标预留--> 
+                                      <span id="promise_765801" class="promise411"> </span> </div>
+                                  </div>
 
-	        <div class="clearfix" style="clear: none;"></div>
-	        <input type="hidden" name="continue" value="/" />
-	    </form>
+                                </div>
+                                
+                                <!--- 赠品和附件显示 -> 
+                              </td>
+                              <td class="p-price"></td>
+                              <td class="fore2" style="vertical-align:middle">x 1</td>
+                            </tr>
+                            
+                            
+                            <! 延保显示 -->
+                          </tbody>
+                        </table>
+                      
+                      
+                      
+                      </div>
+                                            </div>
+                                                                <div class="review-block review-sale">
+                    </div>
+                    
+                  </div>
+
+                  <input type="hidden" id="create_order_action" value="http://www.xzhuang.com/bts/order/generateOrder"/>
+                  <input type="hidden" id="hideAreaIds" name="areaid" value="">
+                  <input type="hidden" id="AreaId" name="area_id" value="">
+		          <input type="hidden" name="ship_name" id="ship_name" value="">
+		          <input type="hidden" name="ship_mobile" id="ship_mobile" value="">
+		          <input type="hidden" name="ship_telephone" id="ship_telephone" value="">
+		          <input type="hidden" name="ship_email" id="ship_email" value="">
+		          <input type="hidden" name="ship_address" id="ship_address" value="">
+		          <input type="hidden" name="ship_area" id="ship_area" value="">
+		          <input type="hidden" name="payment_type_name" id="payment_type_name" value="" />
+		          <input type="hidden" name="ship_payment_id" id="ship_payment" value=""/>
+		          <input type="hidden" name="payment_type" id="ship_payment_type" value=""/>
+		          <input type="hidden" name="ship_delivery_day" id="ship_delivery_day" value=""/>
+		          <input type="hidden" name="ship_delivery_time" id="ship_delivery_time" value=""/>
+		          <input type="hidden" name="use_coupon_type" id="use_coupon_type"/>
+		          <input type="hidden" name="partner_id" id="partner_id"  value=""/>
+		          <input type="hidden" name="bank_co" id="bank_co"  value=""/>
+		          <input type="hidden" name="coupon_id" id="coupon_id" />
+		          <input type="hidden" name="sender_id" id="sender_id" value="" />
+		          <input type="hidden" name="exchange" value="" />
+		           <input type="hidden" name="payment_type_st" id="payment_type_st" value="" />
+		
+		          <input type="hidden" id="pickup_pro" name="pickup_pro"/>
+		          <input type="hidden" id="pickup_id" name="pickup_id"/>
+		
+		          <input type="hidden" id="rule_ids" name="rule_ids"/>
+                  <input type="hidden" name="useBalance"/>
+                  
+                  <input type="hidden" name="integra_id" id="integra_id"/>
+          </form>
+			</div>
+		</div>
 	</div>
-		<!-- 脚部 -->
+
+	</div>
+	<!-- 脚部 -->
 	<div class="minifooter"> Copyright 2008-2016 上海校妆科技有限公司 Xzhuang.com 版权所有 沪ICP备15046755号 </div>
 
 

@@ -14,6 +14,8 @@ requirejs.config({
 		"Register":"scripts/register",
 		"Load":"scripts/detail",
 		"Login":"scripts/login",
-		"move":"scripts/base"
+		"move":"scripts/base",
+		"Pop":"scripts/Pop",
+		"shopcar":"scripts/shopcar"
 	}
 })

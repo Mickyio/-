@@ -152,6 +152,16 @@
 			    display: block;
 	    	}
 	    }
+	    #login_error{
+	    	position: absolute;
+		    left: 50px;
+		    top: 197px;
+		    border: none;
+		    padding: 0 10px;
+		    width: 332px;
+		    line-height: 33px;
+		    display: none;
+	    }
 	    .forget{
 	    	overflow: hidden;
 	    	span{

@@ -5,9 +5,54 @@ define(['jquery'],function(){
 	move.prototype={
 		init:function(){
 			this.notice_list=$(".notice_list");
-			
-
+			this.login=$(".welcome").find("a").eq(0);
+			this.register=$(".welcome").find("a").eq(1);
+			console.log(this.login,this.register);
+			this.login.on("click",$.proxy(this.checkLogin,this));
+			this.input=$("#search_txt");
+			this.list = $(".search_list");
+			//console.log(this.list)
+			this.input.on("input",$.proxy(this.offinput,this))
+			// 当输入框失去焦点时
+			this.input.on("blur",$.proxy(this.oninput,this));
+			this.timer=null;
 			this.move_up();
+		},
+		oninput:function(){
+			
+			this.list.css({
+						display:"none"
+					})
+			
+		 
+		},
+		offinput:function(){
+			this.list.css({
+				display:"block"
+			})
+			clearInterval(this.timer);
+			
+			// 获取输入框的value
+			$val = this.input.val();
+			var _this = this;
+			this.timer = setTimeout(function(){	
+				//通过 jQ 的 ajax 请求数据 
+				$.ajax({url: "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=" + $val + "&cb=callback",
+				        dataType:'jsonp',//数据类型
+				        type: "GET",//获取方式
+				        jsonpCallback:"callback",//回调函数名
+				        context:this,
+				        success:function(result){
+        					let n = 8 ;
+        					for(let i = 0 ; i < n ; i++){
+        						// 获取的结果插到相应是li中
+        						_this.list.children().eq(i).html(result.s[i]);
+        						}
+        					},
+       					
+   						})
+				},500)
+				
 		},
 		move_up:function(){
 			var timer;

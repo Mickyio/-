@@ -1,67 +1,104 @@
-define(["jquery"],function($){
+define(['jquery'],function(){
 	function Pop(){
 
 	}
-	Pop.prototype = {
+	Pop.prototype={
 		constructor:Pop,
-		init:function(){
-			this.creatMask();
-			this.creatEle();
-		},
-		creatMask:function(){
-			var $div = $("<div></div>")
-			$div.css({
-				width :"100%",
-				height : "100%",
-				position :"fixed",
-				zIndex :9000,
-				background :"rgba(0,0,0,.5)",
-				left:0,
-				top:0
-			})
-			$("body").append($div);
-			this.$mask = $div
-		},
-		creatEle:function(){
-			var $div = $("<div></div>")
-			$div.css({
-				width:200,
-				height:200,
-				position :"absolute",
-				zIndex:9999,
-				left:"50%",
-				top:"50%",
-				background:"#fff",
-				marginLeft:-100,
-				marginTop:-100
-			})
-			$("body").append($div);
+		init:function(ele){
+			this.ele=ele;
+			//this.btn=$(".buy_btn");
+			this.mask=$(".util-overlayer");
+			this.pop=$(".util-dialog");
+			this.action=$(".btn-action")
+			this.cancel=$(".btn-cancel");
+			this.close=$(".close");
+			this.name=$(".f12").eq(0);
+			this.price=$(".f12").eq(1).find("b");
+			this.status=$(this.ele).css("display");
+		
+			
+			
+			if($(this.ele).length>1){
+				for(var i=0;i<this.ele.length;i++){
+				this.ele[i].index=i;
+				$(this.ele[i]).on("click",$.proxy(this.show,this))
+				$(this.ele[i]).on("click",$.proxy(this.getid,this))
+				}
+			}else{
+				$(this.ele).on("click",$.proxy(this.show,this))
+				$(this.ele).on("click",$.proxy(this.getid,this))
+			}
+			
+			this.action.on("click",$.proxy(this.gotoShopcar,this));
+			this.close.on("click",$.proxy(this.hide,this));
+			this.cancel.on("click",$.proxy(this.hide,this));
 
-			var $btn = $("<span>x</span>");
-			$btn.css({
-				position:"absolute",
-				top:"5%",
-				right:"5%",
-				width:30,
-				height:30,
-				color:"red",
-				lineHight:30,
-				background:"blue",
-				textAlign:"center",
-				fontWeight:"bold"
-			})
-			$div.append($btn);
-			var _this = this;
-			$btn.on("click",function(){
-				$div.remove();
-				_this.$mask.remove();
-			})
+			//console.log(this.btn);
+			//this.show();
+			//this.getCookie();
+		},
+		getid:function(e){
+			var e=e||window.event;
+			this.index=e.target.index;
+			//console.log(this.index);
+			this.id=$(this.ele[this.index]).attr("data-id");
 
+			console.log(this.id);
+			$.cookie("id",this.id);
+			this.getCookie();
+
+		},
+		show:function(){
+			this.mask.css({
+				display:"block"
+			})
+			this.pop.css({
+				display:"block"
+			})
+		},
+		hide:function(){
+			this.mask.css({
+				display:"none"
+			})
+			this.pop.css({
+				display:"none"
+			})
+		},
+		getCookie:function(){
+			this.cookie=$.cookie("id");
+			//console.log(this.cookie)
+			if(this.cookie){
+				var setup={
+				url:"scripts/recomend.json",
+				type:"GET",
+				context:this
+				}
+			  $.ajax(setup).then($.proxy(this.loaddata,this));
+			}
+		},
+		loaddata:function(res){
+			var _this=this;
+			console.log(res);
+			res.index_data.forEach(function(item){
+				if(item.id==_this.cookie){
+					$(_this.name).html(item.title);
+					$(_this.price).html(item.sale_price);
+					$(_this.ele).attr({"src":item.img,"id":item.id,"title":item.title,"price":item.sale_price})
+					$(_this.action).attr({"img":item.img,"id":item.id,"title":item.title,"price":item.sale_price,"num":1})
+				}
+			})
+			res.recomend_data.forEach(function(item){
+				if(item.id==_this.cookie){
+					$(_this.name).html(item.title);
+					$(_this.price).html(item.sale_price);
+					$(_this.ele).attr({"src":item.img,"id":item.id,"title":item.title,"price":item.sale_price})
+					$(_this.action).attr({"img":item.img,"id":item.id,"title":item.title,"price":item.sale_price,"num":1})
+				}
+			})
+		},
+		gotoShopcar:function(){
+			self.location.href="http://localhost:82/shopcar.html";
 		}
-
 	}
-
 	return new Pop();
-
-
 })

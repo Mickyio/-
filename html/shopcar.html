@@ -5,7 +5,7 @@
 	<title>Document</title>
 	<style type="text/css" href="css/detail.css"></style>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/shopcar.css">
 </head>
 <body>
 	<!-- 头部开始 -->
@@ -31,7 +31,7 @@
 				</div>
 				<div class="user_center_unflod">
 					<div class="serv2"></div>
-					
+					<span class="my_xz">我的校妆</span>
 					<a href="">我的优惠券</a>
 					<a href="">我的积分</a>
 					<a href="">我的储值</a>
@@ -593,7 +593,7 @@
 							</ul>
 						</div>
 					<li>
-						<a href="" >首页</a>
+						<a href="http://localhost:82/index.html" >首页</a>
 					</li>
 					<li>
 						<a href="" class="active">SKIN79专区
@@ -619,47 +619,115 @@
 		</div>
 	</div>
 	<!-- body开始 -->
-	<!---登陆 begin-->
-	<div class="AllWrapInside">
-
-	    <form action="http://www.xzhuang.com/cas/sign/in?" method="post" id="form_signin" autocomplete="off" class="loginform">
-	        <input name="isfastbuy" value="" type="hidden">
-	        <div class="denglu_in" id="formlogin">
-	            <div class="land">
-	                <h2>登录校妆网</h2><span>还没校妆网账号，请<a href="http://localhost:82/register.html">免费注册</a></span>
-	            </div>
-	            <div class="land_input1">
-	                <i class="i1"></i>
-	                <input type="text" class="x-input inputstyle input_name" id="username" name="username" value="" placeholder="请输入用户名或会员卡号" maxlength="18" tabindex="1" />
-	                            </div>
-	            <div class="land_input2">
-	                <i class="i2"></i>
-	                <input type="password" class="x-input inputstyle input_pwd" id="password" name="password" placeholder="请输入密码" maxlength="20" tabindex="2" />
-	                            </div>
-	                            <div id="login_error" class="error">用户名或密码不正确</div>
-	                                    <div class="forget">
-	                <span><input type="checkbox" class="checkbox" />记住用户名</span>
-	                <a class="link"  href="/cas/forgotPassword">忘记密码？</a>
-	            </div>
-	            <div class="dl_denglu">
-	                <input value="登录" tabindex="4" type="button">
-	            </div>
-	            <div class="dl_no dl_nos">
-	                <p>无需注册，即可登录</p>
-	                <div class="dl_fr">
-	                    <a href="/cas/third/oauth2/domain/qq?continue=" class="dl_fr2" title="使用QQ账号直接登陆">QQ</a>
-	                    <a href="/cas/index/wxLogin" class="dl_fr4" title="使用微信直接登陆">微信</a>
-	                </div>
-	            </div>
+	<!--- begin-->
+	<div class="content">
+		<div class="cart_index">
+	        <div class="cart_tishi" id="carttishi">
+	            <em class="red">温馨提示：</em>1.购物车中的商品无法保留库存，请您及时结算。2.商品的价格和库存将以订单提交时为准。<span class="cartclose"></span>
 	        </div>
-	        
-	        <div class="dengluimg"><a href="http://www.xzhuang.com/index/advcount?adv=50" target="_blank"><img src="http://image.xzhuang.com/upload/20171113/17373123a2bcbcc58ff2101861d95eb40c467a.jpg"/></a></div>
+	        <div class="cart_list_tab">
+	            <table cellspadding="0" cellspacing="0" border="0">
+	                <tbody>
+	                    <tr class="cartltab_title">
+	                        <td width="386">商品名称</td>
+	                        <td width="130">单价</td>
+	                        <td width="80">使用积分</td>
+	                        <td width="130">数量</td>
+	                        <td width="130">赠送积分</td>
+	                        <td width="130">小计</td>
+	                        <td width="110">操作</td>
+	                    </tr>
+	                    <tbody id="tbody">
+	                    <tr class="cartltabtr" id="tr-2103">
+	                        <td align="left">
+	                        	<a title="曼秀雷敦天然植物润唇膏－香橙4g" target="_blank" class="cartltab_pro">
+	                        		<img src="http://image.xzhuang.com/static/index/img/no_pic.jpg" height="50" width="50">
+	                        	</a> 
+	                        	<a href="http://www.xzhuang.com/?product-60381.html" target="_top" class="cartltab_proname">曼秀雷敦天然植物润唇膏－香橙4g
+	                        	</a>
+	                        </td>
+	                        <td>￥23.00</td>
+	                        <td>0</td>
+	                        <td>
+	                        	<span class="cartltab_num1 decreaseCartProductNum" data-product-id="60381">-</span> 
+	                        	<input class="cartltab_num updateCartProductNum" id="quantity-60381"  name="quantity" value="1" data-value="1" type="text" data-product-id="60381"> 
+	                        	<span class="cartltab_num2 increaseCartProductNum" data-product-id="60381" >+</span>
+	                        </td>
+	                        <td>23</td>
+	                        <td>￥23.00</td>
+	                        <td class="cart_caozuo">
+	                        	<a class="cct_list_num_2103 deleteGoodsFromCart" data-product-id="60381" href="javascript:;">删除</a>
+	                        	<br>
+	                        </td>
+	                    </tr>
+	                   </tbody>
+	                        <tr class="cartltab_count">
+	                        	<td colspan="7"><span class="cart_tub0 cart_tub2"></span> <a href="javascript:;" class="cleanProductFromCart">清空购物车</a>
+	                            <ul id="cartTotal">
+	                                <li>商品数量总计：1件</li>
+	                                <li>赠送积分总计：23分</li>
+	                                <li>商品总额：</li>
+	                                <li class="cart_prices">￥23.00 </li>
+	                                <input value="49.80" id="total_price_hidden" type="hidden">
+	                            </ul></td>
+	                    </tr>
+	                </tbody>
+	            </table>
 
-	        <div class="clearfix" style="clear: none;"></div>
-	        <input type="hidden" name="continue" value="/" />
-	    </form>
+	        </div>
+        <!--结算begin-->
+        <div class="cart_youhui clearfix" >
+             <div class="cart_yhcount">
+                <div id="cartPmt" class="clearfix">
+                        <h5>当前享受的优惠：</h5> 
+	                    <ol>  
+	                        <li>【换购】美迪惠尔A.P.L去角质黑头面膜(红色)15ml*2</li>
+	                                                  
+	                    </ol>  
+            	</div>
+        	</div>
+        </div>
+        <div class="cart_js">
+            <span class="cart_tub0 cart_tub4"></span>
+            <a class="cart_jx" href="http://www.xzhuang.com">继续购物</a> 			
+            <a href="javascript:;" class="cart_tub0 cart_tub5 checkoutCart" data-url="http://www.xzhuang.com/bts/order/finalPayment" data-login="0"><i style="font-weight: bold;">去结算</i></a>
+        </div>
+        <!--结算end-->
+        <div style="clear: both;"></div>
+        <!--产品列表begin-->
+        <div class="cart_cdlike" style="display:none">
+            <div class="cart_cdlike_title">
+                <span class="meybelike meybelike1">您可能还喜欢</span>
+            </div>
+            <div class="cart_cdlike_title cart_cd">
+                <a class="xz_bfd_logo" href="http://www.baifendian.com/" target="_blank"></a>
+            </div>
+            <div class="cart_ylike" id="cartlike_show">
+                <dl>
+                    <dt>
+                    <a href="http://www.xzhuang.com?product-57285.html" title="ALOBON雅邦完美立体眼线液笔2ml" target="_top"><img src="http://image.xzhuang.com/static/index/img/no_pic.jpg" alt="ALOBON雅邦完美立体眼线液笔2ml" height="160" width="160"></a>
+                    </dt>
+                    <dd class="cart_ylikename">
+                        <a href="http://www.xzhuang.com?product-57285.html" title="ALOBON雅邦完美立体眼线液笔2ml" target="_top">ALOBON雅邦完美立体眼线液笔2ml</a>
+                    </dd>
+                    <dd>
+                        <em class="cartlike_price2">￥15.0</em><em class="cartlike_price1">￥30.0</em>
+                    </dd>
+                    <dd>
+                        <a onclick="Cart.addGoodsToCart(57285, 1)" class="cart_tub0 cart_tub6" href="javascript:;">加入购物车</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <!--产品列表begin-->
+        <div class="cart_tskc" style="display: none;" id="storeMessageID">
+            <p class="cart_tskc_name"></p>
+            <p></p>
+        </div>
+    </div>
+
 	</div>
-		<!-- 脚部 -->
+	<!-- 脚部 -->
 	<div class="minifooter"> Copyright 2008-2016 上海校妆科技有限公司 Xzhuang.com 版权所有 沪ICP备15046755号 </div>
 
 

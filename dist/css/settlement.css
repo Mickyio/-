@@ -1,0 +1,110 @@
+.product_type .products_type_nav {
+  display: none; }
+
+.product_type:hover .products_type_nav {
+  display: block; }
+
+.detail_body {
+  width: 100%;
+  text-align: center; }
+  .detail_body .detail_wrap {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative; }
+
+.w {
+  width: 1100px;
+  margin: 0px auto;
+  margin-bottom: 20px; }
+  .w .checkout {
+    width: 1098px;
+    border: 1px solid #ddd;
+    background: #fff; }
+    .w .checkout .wizard #j_form #step-4 {
+      border-top: 1px solid #DDDDDD;
+      padding: 10px 0; }
+      .w .checkout .wizard #j_form #step-4 .step-title {
+        height: 45px;
+        line-height: 45px;
+        padding: 0 20px;
+        position: relative; }
+        .w .checkout .wizard #j_form #step-4 .step-title .step-content {
+          color: #666;
+          font-size: 14px;
+          float: right; }
+        .w .checkout .wizard #j_form #step-4 .step-title strong {
+          color: #000000;
+          font-size: 18px;
+          font-weight: normal; }
+      .w .checkout .wizard #j_form #step-4 .step-content .part-order {
+        padding: 0 20px; }
+        .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox {
+          width: 1058px; }
+          .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox #order-cart {
+            width: 1058px; }
+            .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox #order-cart .order-review {
+              padding-top: 5px;
+              width: 1058px; }
+              .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox #order-cart .order-review .span-skulist .review-thead {
+                width: 100%;
+                font-size: 14px;
+                color: #333; }
+                .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox #order-cart .order-review .span-skulist .review-thead td {
+                  height: 47px;
+                  border-left: 1px solid white;
+                  color: #333;
+                  line-height: 47px;
+                  text-align: center;
+                  background-color: #fafafa; }
+                .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox #order-cart .order-review .span-skulist .review-thead .fore1 {
+                  border-left: 0 none;
+                  width: 580px; }
+                .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox #order-cart .order-review .span-skulist .review-thead .fore3 {
+                  width: 150px; }
+                .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox #order-cart .order-review .span-skulist .review-thead .fore2 {
+                  width: 120px; }
+                .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox #order-cart .order-review .span-skulist .review-thead .fore4 {
+                  width: 100px; }
+              .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox #order-cart .order-review .span-skulist .review-body .review-tbody {
+                border-bottom: 1px solid #dddddd;
+                padding: 20px 0px; }
+                .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox #order-cart .order-review .span-skulist .review-body .review-tbody .order-table {
+                  width: 1058px; }
+                  .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox #order-cart .order-review .span-skulist .review-body .review-tbody .order-table .fore1 {
+                    padding: 0 10px;
+                    width: 406px; }
+                    .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox #order-cart .order-review .span-skulist .review-body .review-tbody .order-table .fore1 .p-goods {
+                      width: 406px;
+                      overflow: hidden; }
+                      .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox #order-cart .order-review .span-skulist .review-body .review-tbody .order-table .fore1 .p-goods .p-img {
+                        border: 1px solid #DDDDDD;
+                        float: left;
+                        height: 50px;
+                        margin-right: 5px;
+                        overflow: hidden;
+                        padding: 0;
+                        width: 50px; }
+                      .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox #order-cart .order-review .span-skulist .review-body .review-tbody .order-table .fore1 .p-goods .p-detail {
+                        float: left;
+                        line-height: 16px;
+                        width: 346px; }
+                        .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox #order-cart .order-review .span-skulist .review-body .review-tbody .order-table .fore1 .p-goods .p-detail .p-name {
+                          height: 32px;
+                          overflow: hidden;
+                          width: 345px; }
+                        .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox #order-cart .order-review .span-skulist .review-body .review-tbody .order-table .fore1 .p-goods .p-detail .p-more {
+                          color: #999999;
+                          line-height: 20px; }
+                  .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox #order-cart .order-review .span-skulist .review-body .review-tbody .order-table .fore3 {
+                    text-align: center;
+                    width: 140px; }
+                  .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox #order-cart .order-review .span-skulist .review-body .review-tbody .order-table .p-price {
+                    padding-right: 10px;
+                    text-align: center;
+                    width: 80px; }
+                    .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox #order-cart .order-review .span-skulist .review-body .review-tbody .order-table .p-price strong {
+                      color: #333333; }
+                  .w .checkout .wizard #j_form #step-4 .step-content .part-order .sbox #order-cart .order-review .span-skulist .review-body .review-tbody .order-table .fore2 {
+                    text-align: center;
+                    width: 80px; }
