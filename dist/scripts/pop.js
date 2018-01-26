@@ -95,7 +95,7 @@ define(['jquery'],function(){
 					$(_this.action).attr({"img":item.img,"id":item.id,"title":item.title,"price":item.sale_price,"num":1})
 				}
 			})
-			this.gotoShopcar();
+		
 		},
 		gotoShopcar:function(){
 			self.location.href="shopcar.html";
