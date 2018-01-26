@@ -110,7 +110,7 @@ define(['jquery','cookie'],function(){
 				this.original_price=$(".priced").eq(this.index).text();
 				//console.log(this.brand,this.img,this.title,this.sale_num);
 				$.cookie("shopping_cart",'{"id":"'+this.id+ '","discount":"'+this.discount+ '","original_price":"'+this.original_price+ '","sale_price":"'+this.sale_price+ '","title":"'+this.title+'","brand":"'+this.brand+'","img":"'+this.img+'","sale_num":"'+this.sale_num+'"}')
-				self.location.href="http://localhost:82/detail.html";
+				self.location.href="detail.html";
 			
 
 		}

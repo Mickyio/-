@@ -15,7 +15,7 @@ requirejs.config({
 		"Load":"scripts/detail",
 		"Login":"scripts/login",
 		"move":"scripts/base",
-		"Pop":"scripts/Pop",
+		"Pop":"scripts/pop",
 		"shopcar":"scripts/shopcar"
 	}
 })
