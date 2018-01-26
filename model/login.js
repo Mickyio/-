@@ -23,7 +23,7 @@ define(['jquery','cookie'],function(){
 			if(username==scookie.id && pass==scookie.pass){
 				flag=true;
 				console.log("登录成功");
-				self.location.href="http://localhost:82/index.html";
+				self.location.href="index.html";
 			}else{
 				flag=false;
 				console.log("登录失败");

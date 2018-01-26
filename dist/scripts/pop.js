@@ -97,7 +97,7 @@ define(['jquery'],function(){
 			})
 		},
 		gotoShopcar:function(){
-			self.location.href="http://localhost:82/shopcar.html";
+			self.location.href="shopcar.html";
 		}
 	}
 	return new Pop();

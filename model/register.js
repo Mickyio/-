@@ -123,7 +123,7 @@ define(['jquery'],function(){
 			if(this.flag){
 					//console.log("验证成功") ;
 					this.setCookie();
-					self.location.href="http://localhost:82/login.html";
+					self.location.href="login.html";
 				}
 
 			/*if($.cookie("Logins")){

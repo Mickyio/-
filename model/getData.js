@@ -62,7 +62,7 @@ define(['jquery'],function(){
 				console.log(this.id,this.img,this.title,this.sale_price,this.original_price);
 				//this.setCookie();
 				$.cookie("shopping_cart",'{"id":"'+this.id+ '","original_price":"'+this.original_price+ '","sale_price":"'+this.sale_price+ '","title":"'+this.title+'","img":"'+this.img+'"}')
-				self.location.href="http://localhost:82/detail.html";
+				self.location.href="detail.html";
 
 			}/*,
 			
